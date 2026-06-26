@@ -59,11 +59,11 @@
 
     <!-- Desktop Nav -->
     <nav class="site-nav" aria-label="Primary navigation">
-      <a href="/succulents/" class="site-nav__link">Succulents</a>
-      <a href="/about.html" class="site-nav__link">Our Farm</a>
-      <a href="/export-compliance/" class="site-nav__link">Export</a>
-      <a href="/countries/usa.html" class="site-nav__link">Countries</a>
-      <a href="#rfq" class="site-nav__link">Get a Quote</a>
+      <a href="/succulents/" class="site-nav__link" data-i18n="nav.succulents">Succulents</a>
+      <a href="/about.html" class="site-nav__link" data-i18n="nav.farm">Our Farm</a>
+      <a href="/export-compliance/" class="site-nav__link" data-i18n="nav.export">Export</a>
+      <a href="/countries/usa.html" class="site-nav__link" data-i18n="nav.countries">Countries</a>
+      <a href="#rfq" class="site-nav__link" data-i18n="nav.quote">Get a Quote</a>
     </nav>
 
     <!-- Actions -->
@@ -71,8 +71,10 @@
       <div class="lang-selector" role="group" aria-label="Language selection">
         <button class="lang-btn is-active" data-lang="en" aria-pressed="true">EN</button>
         <button class="lang-btn" data-lang="ja" aria-pressed="false">JP</button>
+        <button class="lang-btn" data-lang="zh" aria-pressed="false">中文</button>
+        <button class="lang-btn" data-lang="kr" aria-pressed="false">한국어</button>
       </div>
-      <a href="#rfq" class="btn btn--primary btn--sm">Request Quote</a>
+      <a href="#rfq" class="btn btn--primary btn--sm" data-i18n="nav.cta">Request Quote</a>
     </div>
 
     <!-- Mobile Toggle -->
@@ -89,11 +91,11 @@
 <div class="mobile-nav" id="mobile-nav" role="dialog" aria-label="Mobile menu" aria-modal="true">
   <div class="mobile-nav__backdrop"></div>
   <nav class="mobile-nav__panel">
-    <a href="/succulents/" class="mobile-nav__link">Succulents</a>
-    <a href="/about.html" class="mobile-nav__link">Our Farm</a>
-    <a href="/export-compliance/" class="mobile-nav__link">Export Compliance</a>
-    <a href="/countries/usa.html" class="mobile-nav__link">USA Importing Guide</a>
-    <a href="#rfq" class="mobile-nav__link">Request a Quote</a>
+    <a href="/succulents/" class="mobile-nav__link" data-i18n="nav.succulents">Succulents</a>
+    <a href="/about.html" class="mobile-nav__link" data-i18n="nav.farm">Our Farm</a>
+    <a href="/export-compliance/" class="mobile-nav__link" data-i18n="nav.export">Export Compliance</a>
+    <a href="/countries/usa.html" class="mobile-nav__link" data-i18n="nav.countries">USA Importing Guide</a>
+    <a href="#rfq" class="mobile-nav__link" data-i18n="nav.quote">Request a Quote</a>
     <div style="margin-top: auto; padding-top: 2rem;">
       <a href="https://wa.me/YOUR_WHATSAPP_NUM?text=Hi%20SouthQuest%2C%20I%27d%20like%20to%20learn%20more." class="btn btn--whatsapp" style="width:100%; justify-content:center;" target="_blank" rel="noopener">
         <svg class="icon-wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
@@ -114,7 +116,7 @@
   <div class="hero__content">
     <div class="hero__eyebrow">
       <span class="hero__dot" aria-hidden="true"></span>
-      <span class="badge badge--green">Yunnan, China · 2,000m Elevation</span>
+      <span class="badge badge--green" data-i18n="hero.badge">Yunnan, China · 2,000m Elevation</span>
     </div>
 
     <h1 class="hero__title" id="hero-heading">
@@ -129,27 +131,27 @@
 
     <div class="hero__actions">
       <a href="#scenarios" class="btn btn--primary btn--lg">
-        Find Your Program
+        <span data-i18n="hero.cta1">Find Your Program</span>
         <svg class="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
       <a href="https://wa.me/YOUR_WHATSAPP_NUM?text=Hi%20SouthQuest%2C%20I%27d%20like%20to%20learn%20more%20about%20your%20succulent%20programs." class="btn btn--outline btn--lg" target="_blank" rel="noopener">
         <svg class="icon-wa" viewBox="0 0 24 24" style="width:20px;height:20px;fill:var(--c-primary)"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        Chat on WhatsApp
+        <span data-i18n="hero.cta2">Chat on WhatsApp</span>
       </a>
     </div>
 
     <div class="hero__stats">
       <div class="hero__stat">
-        <div class="hero__stat-value">11+</div>
-        <div class="hero__stat-label">Years Growing</div>
+        <div class="hero__stat-value" data-i18n="hero.stat1v">11+</div>
+        <div class="hero__stat-label" data-i18n="hero.stat1l">Years Growing</div>
       </div>
       <div class="hero__stat">
-        <div class="hero__stat-value">200+</div>
-        <div class="hero__stat-label">Varieties</div>
+        <div class="hero__stat-value" data-i18n="hero.stat2v">200+</div>
+        <div class="hero__stat-label" data-i18n="hero.stat2l">Varieties</div>
       </div>
       <div class="hero__stat">
-        <div class="hero__stat-value">40+</div>
-        <div class="hero__stat-label">Countries</div>
+        <div class="hero__stat-value" data-i18n="hero.stat3v">40+</div>
+        <div class="hero__stat-label" data-i18n="hero.stat3l">Countries</div>
       </div>
     </div>
   </div>
@@ -190,20 +192,20 @@
 <section class="trust-bar" aria-label="Key farm statistics">
   <div class="trust-bar__grid">
     <div class="trust-item reveal">
-      <div class="trust-item__value">11 Yrs</div>
-      <div class="trust-item__label">Farm Heritage</div>
+      <div class="trust-item__value" data-i18n="trust.1v">11 Yrs</div>
+      <div class="trust-item__label" data-i18n="trust.1l">Farm Heritage</div>
     </div>
     <div class="trust-item reveal reveal-delay-1">
-      <div class="trust-item__value">200+</div>
-      <div class="trust-item__label">Live Varieties</div>
+      <div class="trust-item__value" data-i18n="trust.2v">200+</div>
+      <div class="trust-item__label" data-i18n="trust.2l">Live Varieties</div>
     </div>
     <div class="trust-item reveal reveal-delay-2">
-      <div class="trust-item__value">40+</div>
-      <div class="trust-item__label">Export Markets</div>
+      <div class="trust-item__value" data-i18n="trust.3v">40+</div>
+      <div class="trust-item__label" data-i18n="trust.3l">Export Markets</div>
     </div>
     <div class="trust-item reveal reveal-delay-3">
-      <div class="trust-item__value">100%</div>
-      <div class="trust-item__label">Phyto Compliant</div>
+      <div class="trust-item__value" data-i18n="trust.4v">100%</div>
+      <div class="trust-item__label" data-i18n="trust.4l">Phyto Compliant</div>
     </div>
   </div>
 </section>
@@ -217,12 +219,12 @@
 
     <header class="section-header section-header--center reveal">
       <div class="section-header__overline">
-        <span class="t-overline">Find Your Program</span>
+        <span class="t-overline" data-i18n="sc.over">Find Your Program</span>
       </div>
-      <h2 class="section-header__title" id="scenarios-heading">
+      <h2 class="section-header__title" id="scenarios-heading" data-i18n="sc.h2">
         Which describes your business best?
       </h2>
-      <p class="section-header__body">
+      <p class="section-header__body" data-i18n="sc.body">
         Every partner is different. Choose your profile below — we'll match you with the right variety mix, shipment structure, and compliance documentation for your market.
       </p>
     </header>
@@ -233,9 +235,9 @@
       <article class="scenario-card reveal">
         <div class="scenario-card__header">
           <div class="scenario-card__icon-wrap" aria-hidden="true">🛍️</div>
-          <span class="badge">Retail & E-comm</span>
+          <span class="badge" data-i18n="c1.badge">Retail & E-comm</span>
         </div>
-        <h3 class="scenario-card__title">Retail &amp; E-commerce Partners</h3>
+        <h3 class="scenario-card__title" data-i18n="c1.title">Retail &amp; E-commerce Partners</h3>
         <p class="scenario-card__body">
           Etsy sellers, boutique plant shops, Shopee and Amazon merchants, and online florists looking for curated, fast-turnaround succulent bundles that delight end-customers.
         </p>
@@ -254,7 +256,7 @@
             aria-label="Contact SouthQuest Farm via WhatsApp for retail program"
           >
             <svg class="icon-wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Start Conversation
+            <span data-i18n="c1.cta">Start Conversation</span>
           </a>
         </div>
       </article>
@@ -263,9 +265,9 @@
       <article class="scenario-card reveal reveal-delay-1">
         <div class="scenario-card__header">
           <div class="scenario-card__icon-wrap" aria-hidden="true">💎</div>
-          <span class="badge" style="background:var(--c-accent-bg);color:var(--c-accent)">Collectors</span>
+          <span class="badge" style="background:var(--c-accent-bg);color:var(--c-accent)" data-i18n="c2.badge">Collectors</span>
         </div>
-        <h3 class="scenario-card__title">Collectors &amp; Specialty Plant Brands</h3>
+        <h3 class="scenario-card__title" data-i18n="c2.title">Collectors &amp; Specialty Plant Brands</h3>
         <p class="scenario-card__body">
           Private elite enthusiasts, rare plant curators, and specialty brands who seek hand-selected, museum-quality specimens that simply cannot be sourced from a catalogue.
         </p>
@@ -284,7 +286,7 @@
             aria-label="Contact SouthQuest Farm via WhatsApp for collectors program"
           >
             <svg class="icon-wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Inquire About Rare Picks
+            <span data-i18n="c2.cta">Inquire About Rare Picks</span>
           </a>
         </div>
       </article>
@@ -293,9 +295,9 @@
       <article class="scenario-card reveal reveal-delay-2">
         <div class="scenario-card__header">
           <div class="scenario-card__icon-wrap" aria-hidden="true">🏡</div>
-          <span class="badge badge--cream">Wholesale</span>
+          <span class="badge badge--cream" data-i18n="c3.badge">Wholesale</span>
         </div>
-        <h3 class="scenario-card__title">Nurseries &amp; Landscape Buyers</h3>
+        <h3 class="scenario-card__title" data-i18n="c3.title">Nurseries &amp; Landscape Buyers</h3>
         <p class="scenario-card__body">
           Large-scale commercial growers, wholesale importers, and landscape project managers who need reliable high-volume capacity with tight size consistency and full CITES/phyto compliance.
         </p>
@@ -314,7 +316,7 @@
             aria-label="Contact SouthQuest Farm via WhatsApp for wholesale program"
           >
             <svg class="icon-wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Request Bulk Catalogue
+            <span data-i18n="c3.cta">Request Bulk Catalogue</span>
           </a>
         </div>
       </article>
@@ -380,9 +382,9 @@
 
     <header class="section-header reveal">
       <div class="section-header__overline">
-        <span class="t-overline">Our Signature Genera</span>
+        <span class="t-overline" data-i18n="sp.over">Our Signature Genera</span>
       </div>
-      <h2 class="section-header__title" id="species-heading">
+      <h2 class="section-header__title" id="species-heading" data-i18n="sp.h2">
         Two genera.<br>Infinite character.
       </h2>
     </header>
@@ -431,7 +433,7 @@
 
     <div style="text-align:center;margin-top:var(--s-10)" class="reveal">
       <a href="/succulents/" class="btn btn--outline btn--lg">
-        Browse Full Catalogue
+        <span data-i18n="sp.cta">Browse Full Catalogue</span>
         <svg class="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
     </div>
@@ -447,8 +449,8 @@
   <div class="container">
 
     <header class="section-header section-header--center reveal">
-      <span class="t-overline" style="display:block;margin-bottom:var(--s-4)">How It Works</span>
-      <h2 class="section-header__title" id="process-heading">
+      <span class="t-overline" style="display:block;margin-bottom:var(--s-4)" data-i18n="pr.over">How It Works</span>
+      <h2 class="section-header__title" id="process-heading" data-i18n="pr.h2">
         From greenhouse to doorstep
       </h2>
       <p class="section-header__body">
@@ -492,16 +494,16 @@
 
       <div class="faq-intro reveal">
         <div class="faq-intro__pre">
-          <span class="t-overline">Common Questions</span>
+          <span class="t-overline" data-i18n="faq.over">Common Questions</span>
         </div>
-        <h2 class="faq-intro__title" id="faq-heading">
+        <h2 class="faq-intro__title" id="faq-heading" data-i18n="faq.h2">
           Everything you need to know before your first order
         </h2>
         <p class="faq-intro__body">
           From minimum quantities and shipping timelines to phytosanitary compliance and custom variety selection — we've answered the questions we hear most from our global partners.
         </p>
         <a href="https://wa.me/YOUR_WHATSAPP_NUM?text=Hi%20SouthQuest%2C%20I%20have%20a%20question%20about%20ordering." class="btn btn--primary" target="_blank" rel="noopener">
-          Ask Us Anything
+          <span data-i18n="faq.ask">Ask Us Anything</span>
           <svg class="icon-wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         </a>
       </div>
@@ -595,10 +597,10 @@
     <div class="rfq-wrap">
 
       <div class="rfq-aside reveal">
-        <h2 class="rfq-aside__title" id="rfq-heading">
-          Ready to source<br><em style="font-style:italic;color:var(--c-primary)">extraordinary</em><br>plants?
+        <h2 class="rfq-aside__title" id="rfq-heading" data-i18n="rfq.h2">
+          Ready to source extraordinary plants?
         </h2>
-        <p class="rfq-aside__body">
+        <p class="rfq-aside__body" data-i18n="rfq.body">
           Tell us about your business and what you're looking for. We'll respond within 24 hours with a personalised proposal — no automated replies, no sales scripts.
         </p>
         <div class="rfq-perks">
@@ -625,22 +627,22 @@
         <form class="rfq-form" id="rfq-form" novalidate aria-labelledby="rfq-heading">
           <div class="form-row">
             <div class="form-group">
-              <label class="form-label" for="rfq-name">Your Name *</label>
+              <label class="form-label" for="rfq-name" data-i18n="f.name">Your Name *</label>
               <input class="form-input" type="text" id="rfq-name" name="name" placeholder="Jane Smith" required autocomplete="name" />
             </div>
             <div class="form-group">
-              <label class="form-label" for="rfq-email">Email Address *</label>
+              <label class="form-label" for="rfq-email" data-i18n="f.email">Email Address *</label>
               <input class="form-input" type="email" id="rfq-email" name="email" placeholder="jane@mybusiness.com" required autocomplete="email" />
             </div>
           </div>
 
           <div class="form-row">
             <div class="form-group">
-              <label class="form-label" for="rfq-country">Your Country *</label>
+              <label class="form-label" for="rfq-country" data-i18n="f.country">Your Country *</label>
               <input class="form-input" type="text" id="rfq-country" name="country" placeholder="United States" required autocomplete="country-name" />
             </div>
             <div class="form-group">
-              <label class="form-label" for="rfq-type">Buyer Type *</label>
+              <label class="form-label" for="rfq-type" data-i18n="f.type">Buyer Type *</label>
               <select class="form-select" id="rfq-type" name="buyer_type" required>
                 <option value="" disabled selected>Select your profile</option>
                 <option value="Retail / E-commerce Seller">Retail / E-commerce Seller</option>
@@ -654,17 +656,17 @@
           </div>
 
           <div class="form-group">
-            <label class="form-label" for="rfq-varieties">Varieties of Interest</label>
+            <label class="form-label" for="rfq-varieties" data-i18n="f.vars">Varieties of Interest</label>
             <input class="form-input" type="text" id="rfq-varieties" name="varieties" placeholder="e.g. Echeveria Lola, Aeonium arboreum, mixed rosettes…" />
           </div>
 
           <div class="form-group">
-            <label class="form-label" for="rfq-message">Tell Us About Your Project *</label>
+            <label class="form-label" for="rfq-message" data-i18n="f.msg">Tell Us About Your Project *</label>
             <textarea class="form-textarea" id="rfq-message" name="message" placeholder="Approximate quantities, target delivery window, any special requirements…" required></textarea>
           </div>
 
           <button type="submit" class="btn btn--primary btn--lg" style="width:100%;justify-content:center;">
-            Send Enquiry via WhatsApp
+            <span data-i18n="rfq.submit">Send Enquiry via WhatsApp</span>
             <svg class="icon-wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
           </button>
 
@@ -757,7 +759,7 @@
     <hr class="footer-divider" />
 
     <div class="footer-bottom">
-      <span class="footer-bottom__copy">
+      <span class="footer-bottom__copy" data-i18n="footer.copy">
         © 2025 SouthQuest Farm · succulentsfarm.com · All rights reserved
       </span>
       <div class="footer-legal">

@@ -394,14 +394,15 @@ input, textarea, select { font-family: inherit; }
 }
 
 .lang-btn {
-  padding: 4px 10px;
+  padding: 4px 8px;
   border-radius: var(--r-full);
-  font-size: var(--t-xs);
+  font-size: 10px;
   font-weight: 600;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
   color: var(--c-text-3);
   transition: all var(--tr-fast);
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .site-header.is-transparent .lang-btn { color: rgba(255,255,255,0.65); }
