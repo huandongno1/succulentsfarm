@@ -217,106 +217,103 @@
 <section class="scenarios section" id="scenarios" aria-labelledby="scenarios-heading">
   <div class="container">
 
-    <header class="section-header section-header--center reveal">
+    <header class="section-header reveal">
       <div class="section-header__overline">
         <span class="t-overline" data-i18n="sc.over">Find Your Program</span>
       </div>
       <h2 class="section-header__title" id="scenarios-heading" data-i18n="sc.h2">
         Which describes your business best?
       </h2>
-      <p class="section-header__body" data-i18n="sc.body">
-        Every partner is different. Choose your profile below — we'll match you with the right variety mix, shipment structure, and compliance documentation for your market.
-      </p>
     </header>
 
     <div class="scenario-grid">
 
-      <!-- Card 1: Retail & E-commerce -->
-      <article class="scenario-card reveal">
-        <div class="scenario-card__header">
-          <div class="scenario-card__icon-wrap" aria-hidden="true">🛍️</div>
-          <span class="badge" data-i18n="c1.badge">Retail & E-comm</span>
+      <!-- Card 1 (Featured): Retail & E-commerce — spans 2 rows on left -->
+      <article class="scenario-card scenario-card--featured reveal">
+        <div class="scenario-card__photo">
+          <img
+            src="https://images.unsplash.com/photo-1463936575829-25148e1db1b8?w=900&q=80&auto=format&fit=crop"
+            alt="Curated succulent bundles ready for retail shipping"
+            loading="lazy"
+            width="900"
+            height="1125"
+          />
+          <span class="scenario-card__tag" data-i18n="c1.badge">Retail &amp; E-comm</span>
         </div>
-        <h3 class="scenario-card__title" data-i18n="c1.title">Retail &amp; E-commerce Partners</h3>
-        <p class="scenario-card__body">
-          Etsy sellers, boutique plant shops, Shopee and Amazon merchants, and online florists looking for curated, fast-turnaround succulent bundles that delight end-customers.
-        </p>
-        <ul class="scenario-card__features" aria-label="Program highlights">
-          <li class="scenario-card__feature">Flexible mixed-variety bundles (50–500 pcs)</li>
-          <li class="scenario-card__feature">Direct fast air-parcel shipping worldwide</li>
-          <li class="scenario-card__feature">Hassle-free customs paperwork included</li>
-          <li class="scenario-card__feature">Private label &amp; unbranded packaging available</li>
-        </ul>
-        <div class="scenario-card__cta">
+        <div class="scenario-card__text">
+          <h3 class="scenario-card__title" data-i18n="c1.title">Retail &amp; E-commerce Partners</h3>
+          <p class="scenario-card__desc" data-i18n="c1.body">
+            Etsy sellers, boutique plant shops, and online merchants looking for curated, fast-turnaround bundles that delight end-customers.
+          </p>
           <a
             href="https://wa.me/YOUR_WHATSAPP_NUM?text=Hi%20SouthQuest%2C%20I%20run%20a%20retail/e-commerce%20plant%20business.%20I%27d%20like%20to%20inquire%20about%20your%20flexible%20succulent%20mixed%20program."
-            class="btn btn--whatsapp"
+            class="scenario-card__link"
             target="_blank"
             rel="noopener"
-            aria-label="Contact SouthQuest Farm via WhatsApp for retail program"
+            aria-label="Start a conversation about the retail program"
           >
-            <svg class="icon-wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            <span data-i18n="c1.cta">Start Conversation</span>
+            <span data-i18n="c1.cta">Start a conversation</span>
+            <span class="scenario-card__link-arrow" aria-hidden="true">→</span>
           </a>
         </div>
       </article>
 
-      <!-- Card 2: Collectors & Specialty -->
-      <article class="scenario-card reveal reveal-delay-1">
-        <div class="scenario-card__header">
-          <div class="scenario-card__icon-wrap" aria-hidden="true">💎</div>
-          <span class="badge" style="background:var(--c-accent-bg);color:var(--c-accent)" data-i18n="c2.badge">Collectors</span>
+      <!-- Card 2 (Compact): Collectors & Specialty — top right -->
+      <article class="scenario-card scenario-card--compact reveal reveal-delay-1">
+        <div class="scenario-card__photo">
+          <img
+            src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&q=80&auto=format&fit=crop"
+            alt="Premium hand-selected succulent specimen"
+            loading="lazy"
+            width="700"
+            height="394"
+          />
+          <span class="scenario-card__tag" data-i18n="c2.badge">Collectors</span>
         </div>
-        <h3 class="scenario-card__title" data-i18n="c2.title">Collectors &amp; Specialty Plant Brands</h3>
-        <p class="scenario-card__body">
-          Private elite enthusiasts, rare plant curators, and specialty brands who seek hand-selected, museum-quality specimens that simply cannot be sourced from a catalogue.
-        </p>
-        <ul class="scenario-card__features" aria-label="Program highlights">
-          <li class="scenario-card__feature">Hand-picked premium Aeonium &amp; Echeveria old stalks</li>
-          <li class="scenario-card__feature">Individual protective cotton-paper wrapping</li>
-          <li class="scenario-card__feature">Certified safe global delivery (EU, JP, US, AU)</li>
-          <li class="scenario-card__feature">First-look access to new and rare cultivars</li>
-        </ul>
-        <div class="scenario-card__cta">
+        <div class="scenario-card__text">
+          <h3 class="scenario-card__title" data-i18n="c2.title">Collectors &amp; Specialty Brands</h3>
+          <p class="scenario-card__desc" data-i18n="c2.body">
+            Hand-selected museum-quality specimens for rare plant curators who can't source from a catalogue.
+          </p>
           <a
             href="https://wa.me/YOUR_WHATSAPP_NUM?text=Hi%20SouthQuest%2C%20I%27m%20a%20specialty%20collector.%20I%27m%20highly%20interested%20in%20your%20rare%20and%20premium%20succulent%20selections."
-            class="btn btn--whatsapp"
+            class="scenario-card__link"
             target="_blank"
             rel="noopener"
-            aria-label="Contact SouthQuest Farm via WhatsApp for collectors program"
+            aria-label="Inquire about rare and premium picks"
           >
-            <svg class="icon-wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            <span data-i18n="c2.cta">Inquire About Rare Picks</span>
+            <span data-i18n="c2.cta">Inquire about rare picks</span>
+            <span class="scenario-card__link-arrow" aria-hidden="true">→</span>
           </a>
         </div>
       </article>
 
-      <!-- Card 3: Nurseries & Landscape -->
-      <article class="scenario-card reveal reveal-delay-2">
-        <div class="scenario-card__header">
-          <div class="scenario-card__icon-wrap" aria-hidden="true">🏡</div>
-          <span class="badge badge--cream" data-i18n="c3.badge">Wholesale</span>
+      <!-- Card 3 (Compact): Nurseries & Landscape — bottom right -->
+      <article class="scenario-card scenario-card--compact reveal reveal-delay-2">
+        <div class="scenario-card__photo">
+          <img
+            src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=700&q=80&auto=format&fit=crop"
+            alt="Large-scale succulent nursery rows"
+            loading="lazy"
+            width="700"
+            height="394"
+          />
+          <span class="scenario-card__tag" data-i18n="c3.badge">Wholesale</span>
         </div>
-        <h3 class="scenario-card__title" data-i18n="c3.title">Nurseries &amp; Landscape Buyers</h3>
-        <p class="scenario-card__body">
-          Large-scale commercial growers, wholesale importers, and landscape project managers who need reliable high-volume capacity with tight size consistency and full CITES/phyto compliance.
-        </p>
-        <ul class="scenario-card__features" aria-label="Program highlights">
-          <li class="scenario-card__feature">High-volume stable capacity (1,000–50,000+ pcs)</li>
-          <li class="scenario-card__feature">Consistent sizing by spec (2cm, 4cm, 6cm, 8cm+)</li>
-          <li class="scenario-card__feature">100% Phytosanitary Certificate issued per shipment</li>
-          <li class="scenario-card__feature">Full import compliance checklist &amp; pre-clearance support</li>
-        </ul>
-        <div class="scenario-card__cta">
+        <div class="scenario-card__text">
+          <h3 class="scenario-card__title" data-i18n="c3.title">Nurseries &amp; Landscape Buyers</h3>
+          <p class="scenario-card__desc" data-i18n="c3.body">
+            Reliable high-volume capacity with tight size consistency and full phytosanitary compliance for commercial growers.
+          </p>
           <a
             href="https://wa.me/YOUR_WHATSAPP_NUM?text=Hi%20SouthQuest%2C%20we%20are%20commercial%20nurseries/buyers.%20Please%20provide%20your%20bulk%20wholesale%20catalog%20and%20compliance%20checklist."
-            class="btn btn--whatsapp"
+            class="scenario-card__link"
             target="_blank"
             rel="noopener"
-            aria-label="Contact SouthQuest Farm via WhatsApp for wholesale program"
+            aria-label="Request the bulk wholesale catalogue"
           >
-            <svg class="icon-wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            <span data-i18n="c3.cta">Request Bulk Catalogue</span>
+            <span data-i18n="c3.cta">Request bulk catalogue</span>
+            <span class="scenario-card__link-arrow" aria-hidden="true">→</span>
           </a>
         </div>
       </article>
