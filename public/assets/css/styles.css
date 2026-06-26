@@ -4,8 +4,8 @@
    Premium Succulent B2B Export  |  Est. 2013
    ============================================================ */
 
-/* ─── 1. GOOGLE FONTS ─────────────────────────────────────── */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
+/* ─── 1. FONTS — dual CDN (loli.net works in China; gstatic for intl) ── */
+@import url('https://fonts.loli.net/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
 
 /* ─── 2. DESIGN TOKENS ────────────────────────────────────── */
 :root {
