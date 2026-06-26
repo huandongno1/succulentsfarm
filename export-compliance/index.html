@@ -44,20 +44,20 @@
       <span class="site-logo__tagline">Yunnan · Est. 2013</span>
     </a>
     <nav class="site-nav" aria-label="Primary navigation">
-      <a href="/succulents/" class="site-nav__link">Succulents</a>
-      <a href="/about" class="site-nav__link">Our Farm</a>
-      <a href="/export-compliance/" class="site-nav__link" aria-current="page">Export</a>
-      <a href="/countries/usa" class="site-nav__link">Countries</a>
-      <a href="/#rfq" class="site-nav__link">Get a Quote</a>
+      <a href="/succulents/" class="site-nav__link" data-i18n="nav.succulents">Succulents</a>
+      <a href="/about" class="site-nav__link" data-i18n="nav.farm">Our Farm</a>
+      <a href="/export-compliance/" class="site-nav__link" aria-current="page" data-i18n="nav.export">Export</a>
+      <a href="/countries/usa" class="site-nav__link" data-i18n="nav.countries">Countries</a>
+      <a href="/#rfq" class="site-nav__link" data-i18n="nav.quote">Get a Quote</a>
     </nav>
     <div class="site-header__actions">
-      <div class="lang-selector">
-        <button class="lang-btn is-active" data-lang="en">EN</button>
-        <button class="lang-btn" data-lang="ja">JP</button>
-        <button class="lang-btn" data-lang="zh">中文</button>
-        <button class="lang-btn" data-lang="kr">한국어</button>
+      <div class="lang-selector" role="group" aria-label="Language selection">
+        <button class="lang-btn is-active" data-lang="en" aria-pressed="true">EN</button>
+        <button class="lang-btn" data-lang="ja" aria-pressed="false">JP</button>
+        <button class="lang-btn" data-lang="zh" aria-pressed="false">中文</button>
+        <button class="lang-btn" data-lang="kr" aria-pressed="false">한국어</button>
       </div>
-      <a href="/#rfq" class="btn btn--primary btn--sm">Request Quote</a>
+      <a href="/#rfq" class="btn btn--primary btn--sm" data-i18n="nav.cta">Request Quote</a>
     </div>
     <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
       <span class="nav-toggle__bar"></span>

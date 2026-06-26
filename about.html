@@ -40,20 +40,20 @@
       <span class="site-logo__tagline">Yunnan · Est. 2013</span>
     </a>
     <nav class="site-nav" aria-label="Primary navigation">
-      <a href="/succulents/" class="site-nav__link">Succulents</a>
-      <a href="/about" class="site-nav__link" aria-current="page">Our Farm</a>
-      <a href="/export-compliance/" class="site-nav__link">Export</a>
-      <a href="/countries/usa" class="site-nav__link">Countries</a>
-      <a href="/#rfq" class="site-nav__link">Get a Quote</a>
+      <a href="/succulents/" class="site-nav__link" data-i18n="nav.succulents">Succulents</a>
+      <a href="/about" class="site-nav__link" aria-current="page" data-i18n="nav.farm">Our Farm</a>
+      <a href="/export-compliance/" class="site-nav__link" data-i18n="nav.export">Export</a>
+      <a href="/countries/usa" class="site-nav__link" data-i18n="nav.countries">Countries</a>
+      <a href="/#rfq" class="site-nav__link" data-i18n="nav.quote">Get a Quote</a>
     </nav>
     <div class="site-header__actions">
-      <div class="lang-selector">
-        <button class="lang-btn is-active" data-lang="en">EN</button>
-        <button class="lang-btn" data-lang="ja">JP</button>
-        <button class="lang-btn" data-lang="zh">中文</button>
-        <button class="lang-btn" data-lang="kr">한국어</button>
+      <div class="lang-selector" role="group" aria-label="Language selection">
+        <button class="lang-btn is-active" data-lang="en" aria-pressed="true">EN</button>
+        <button class="lang-btn" data-lang="ja" aria-pressed="false">JP</button>
+        <button class="lang-btn" data-lang="zh" aria-pressed="false">中文</button>
+        <button class="lang-btn" data-lang="kr" aria-pressed="false">한국어</button>
       </div>
-      <a href="/#rfq" class="btn btn--primary btn--sm">Request Quote</a>
+      <a href="/#rfq" class="btn btn--primary btn--sm" data-i18n="nav.cta">Request Quote</a>
     </div>
     <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
       <span class="nav-toggle__bar"></span>
@@ -180,23 +180,23 @@
       </header>
 
       <div class="grid-3" style="gap:var(--s-8)">
-        <div class="reveal" style="text-align:center;padding:var(--s-8);background:var(--c-bg);border-radius:var(--r-xl);border:1.5px solid var(--c-border)">
-          <div style="font-size:2.5rem;margin-bottom:var(--s-4)">🌿</div>
-          <h3 style="font-size:var(--t-xl);font-weight:700;color:var(--c-text);margin-bottom:var(--s-3)">Botanical Integrity</h3>
+        <div class="reveal" style="padding:var(--s-8) var(--s-8) var(--s-10);background:var(--c-white);border-radius:var(--r-xl);box-shadow:0 1px 2px rgba(0,0,0,0.04),0 8px 32px rgba(0,0,0,0.06)">
+          <div style="width:36px;height:3px;background:var(--c-primary);border-radius:2px;margin-bottom:var(--s-6)"></div>
+          <h3 style="font-size:var(--t-lg);font-weight:600;color:var(--c-text);margin-bottom:var(--s-3);letter-spacing:-0.02em">Botanical Integrity</h3>
           <p style="font-size:var(--t-sm);color:var(--c-text-2);line-height:1.75">
             Every variety is correctly identified, tagged, and sourced from verified seed or cutting lineages. We never misrepresent species or cultivar names — because your customers' trust begins with ours.
           </p>
         </div>
-        <div class="reveal reveal-delay-1" style="text-align:center;padding:var(--s-8);background:var(--c-bg);border-radius:var(--r-xl);border:1.5px solid var(--c-border)">
-          <div style="font-size:2.5rem;margin-bottom:var(--s-4)">📋</div>
-          <h3 style="font-size:var(--t-xl);font-weight:700;color:var(--c-text);margin-bottom:var(--s-3)">Documentation First</h3>
+        <div class="reveal reveal-delay-1" style="padding:var(--s-8) var(--s-8) var(--s-10);background:var(--c-white);border-radius:var(--r-xl);box-shadow:0 1px 2px rgba(0,0,0,0.04),0 8px 32px rgba(0,0,0,0.06)">
+          <div style="width:36px;height:3px;background:var(--c-primary);border-radius:2px;margin-bottom:var(--s-6)"></div>
+          <h3 style="font-size:var(--t-lg);font-weight:600;color:var(--c-text);margin-bottom:var(--s-3);letter-spacing:-0.02em">Documentation First</h3>
           <p style="font-size:var(--t-sm);color:var(--c-text-2);line-height:1.75">
             Phytosanitary certificates, GACC registration numbers, packing manifests, and commercial invoices are prepared with zero-error tolerance. Clean paperwork is what separates a smooth import from a customs seizure.
           </p>
         </div>
-        <div class="reveal reveal-delay-2" style="text-align:center;padding:var(--s-8);background:var(--c-bg);border-radius:var(--r-xl);border:1.5px solid var(--c-border)">
-          <div style="font-size:2.5rem;margin-bottom:var(--s-4)">🤝</div>
-          <h3 style="font-size:var(--t-xl);font-weight:700;color:var(--c-text);margin-bottom:var(--s-3)">Long-Term Partnership</h3>
+        <div class="reveal reveal-delay-2" style="padding:var(--s-8) var(--s-8) var(--s-10);background:var(--c-white);border-radius:var(--r-xl);box-shadow:0 1px 2px rgba(0,0,0,0.04),0 8px 32px rgba(0,0,0,0.06)">
+          <div style="width:36px;height:3px;background:var(--c-primary);border-radius:2px;margin-bottom:var(--s-6)"></div>
+          <h3 style="font-size:var(--t-lg);font-weight:600;color:var(--c-text);margin-bottom:var(--s-3);letter-spacing:-0.02em">Long-Term Partnership</h3>
           <p style="font-size:var(--t-sm);color:var(--c-text-2);line-height:1.75">
             We invest in multi-season relationships, not one-off transactions. Partners who grow with us gain access to reserved capacity, first-look rare variety drops, and custom growing programs tailored to their market.
           </p>

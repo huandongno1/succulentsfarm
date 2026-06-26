@@ -156,10 +156,18 @@ function applyLang(lang) {
   try { localStorage.setItem('sq-lang', lang); } catch(e) {}
 }
 
-/* 鈹€鈹€鈹€ Sticky Header 鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€ */
+/* ─── Sticky Header ────────────────────────────────────────── */
 (function () {
   const header = document.querySelector('.site-header');
   if (!header) return;
+  // Only toggle transparent on homepage (has .hero section)
+  const hasHero = !!document.querySelector('.hero');
+  if (!hasHero) {
+    // Inner pages: always solid, just add scroll shadow
+    header.classList.remove('is-transparent');
+    header.classList.add('is-solid');
+    return;
+  }
   function updateHeader() {
     header.classList.toggle('is-transparent', window.scrollY <= 60);
     header.classList.toggle('is-solid', window.scrollY > 60);
