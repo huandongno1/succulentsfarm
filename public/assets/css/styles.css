@@ -295,7 +295,9 @@ input, textarea, select { font-family: inherit; }
 }
 
 .site-header.is-transparent {
-  background: transparent;
+  background: rgba(8, 30, 20, 0.52);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .site-header.is-solid {

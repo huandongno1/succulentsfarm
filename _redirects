@@ -1,34 +1,25 @@
 # Cloudflare Pages — Redirect Rules
 # succulentsfarm.com
-# Masks .html extensions for clean URLs
+# NOTE: Cloudflare Pages serves clean URLs natively (/about → about.html).
+#       No 200 rewrites needed — they conflict with CF's built-in routing.
 
-# ── Extension-Free URL Routing ──────────────────────────────
-/about              /about.html                 200
-/succulents         /succulents/index.html      200
-/export-compliance  /export-compliance/index.html 200
-/countries/usa      /countries/usa.html         200
+# ── Legacy / Alternative Spellings ──────────────────────────────────────────
+/farm               /about              301
+/our-farm           /about              301
+/plants             /succulents/        301
+/catalogue          /succulents/        301
+/catalog            /succulents/        301
+/compliance         /export-compliance/ 301
+/phytosanitary      /export-compliance/ 301
+/usa                /countries/usa      301
+/united-states      /countries/usa      301
 
-# ── Legacy / Alternative Spellings ──────────────────────────
-/farm               /about.html                 301
-/our-farm           /about.html                 301
-/plants             /succulents/index.html      301
-/catalogue          /succulents/index.html      301
-/catalog            /succulents/index.html      301
-/compliance         /export-compliance/index.html 301
-/phytosanitary      /export-compliance/index.html 301
-/usa                /countries/usa.html         301
-/united-states      /countries/usa.html         301
+# ── Contact / Quote Alias ───────────────────────────────────────────────────
+/quote              /#rfq               301
+/contact            /#rfq               301
+/rfq                /#rfq               301
+/enquiry            /#rfq               301
 
-# ── Contact / Quote Alias ───────────────────────────────────
-/quote              /#rfq                       301
-/contact            /#rfq                       301
-/rfq                /#rfq                       301
-/enquiry            /#rfq                       301
-
-# ── Trailing Slash Normalisation ────────────────────────────
-/about/             /about.html                 301
-/export-compliance/ /export-compliance/index.html 200
-/countries/         /countries/usa.html         301
-
-# ── SPA Fallback (if you ever add JS routing) ───────────────
-# /* /index.html 200
+# ── Trailing Slash Normalisation ─────────────────────────────────────────────
+/about/             /about              301
+/countries/usa/     /countries/usa      301
