@@ -163,10 +163,10 @@ input, textarea, select { font-family: inherit; }
 }
 
 .section {
-  padding-block: clamp(var(--s-16), 8vw, var(--s-32));
+  padding-block: clamp(var(--s-20), 10vw, var(--s-32));
 }
 
-.section--tight { padding-block: clamp(var(--s-10), 5vw, var(--s-20)); }
+.section--tight { padding-block: clamp(var(--s-12), 6vw, var(--s-20)); }
 .section--flush { padding-block: 0; }
 
 .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-8); }
@@ -224,11 +224,11 @@ input, textarea, select { font-family: inherit; }
 .btn--primary {
   background: var(--c-primary);
   color: var(--c-white);
-  box-shadow: 0 2px 12px rgba(15, 118, 84, 0.3);
+  box-shadow: 0 1px 6px rgba(15, 118, 84, 0.18);
 }
 .btn--primary:hover {
   background: var(--c-primary-dk);
-  box-shadow: 0 4px 24px rgba(15, 118, 84, 0.4);
+  box-shadow: 0 3px 16px rgba(15, 118, 84, 0.28);
   transform: translateY(-1px);
 }
 .btn--primary:active { transform: translateY(0); }
@@ -236,7 +236,7 @@ input, textarea, select { font-family: inherit; }
 .btn--outline {
   background: transparent;
   color: var(--c-primary);
-  border: 1.5px solid var(--c-primary);
+  border: 1px solid currentColor;
 }
 .btn--outline:hover {
   background: var(--c-primary-lt);
@@ -266,9 +266,10 @@ input, textarea, select { font-family: inherit; }
 }
 
 .btn--lg {
-  padding: var(--s-4) var(--s-8);
+  padding: var(--s-4) clamp(var(--s-8), 2.5vw, var(--s-10));
   font-size: var(--t-base);
   border-radius: var(--r-lg);
+  letter-spacing: -0.01em;
 }
 
 .btn--sm {
@@ -327,8 +328,8 @@ input, textarea, select { font-family: inherit; }
 
 .site-logo__name {
   font-weight: 700;
-  font-size: 1.05rem;
-  letter-spacing: -0.01em;
+  font-size: 1.18rem;
+  letter-spacing: -0.02em;
   color: var(--c-text);
   transition: color var(--tr-fast);
 }
@@ -597,6 +598,7 @@ input, textarea, select { font-family: inherit; }
 .hero__media {
   position: relative;
   overflow: hidden;
+  background: linear-gradient(160deg, #083D24 0%, #0F6647 55%, #0D8455 100%);
 }
 
 .hero__media::before {
@@ -1038,11 +1040,11 @@ input, textarea, select { font-family: inherit; }
 .process-steps::before {
   content: '';
   position: absolute;
-  top: 28px;
+  top: 20px;
   left: calc(12.5% + var(--s-4));
   right: calc(12.5% + var(--s-4));
-  height: 1.5px;
-  background: linear-gradient(90deg, var(--c-primary-mid), var(--c-accent-bg));
+  height: 1px;
+  background: linear-gradient(90deg, var(--c-primary-mid), var(--c-border));
 }
 
 .process-step {
@@ -1054,16 +1056,16 @@ input, textarea, select { font-family: inherit; }
 }
 
 .process-step__num {
-  width: 56px; height: 56px;
+  width: 40px; height: 40px;
   border-radius: var(--r-full);
-  background: var(--c-bg);
-  border: 2px solid var(--c-primary);
+  background: var(--c-primary);
+  border: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: var(--t-base);
+  font-size: var(--t-sm);
   font-weight: 700;
-  color: var(--c-primary);
+  color: var(--c-white);
   position: relative;
   z-index: 1;
   flex-shrink: 0;
@@ -1234,10 +1236,10 @@ input, textarea, select { font-family: inherit; }
 }
 
 .rfq-form {
-  background: var(--c-bg-2);
+  background: var(--c-white);
   border-radius: var(--r-xl);
   padding: clamp(var(--s-8), 4vw, var(--s-12));
-  border: 1.5px solid var(--c-border);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04), 0 12px 40px rgba(0,0,0,0.08);
 }
 
 .form-row {
@@ -1310,9 +1312,10 @@ input, textarea, select { font-family: inherit; }
 
 /* ─── 18. FOOTER ──────────────────────────────────────────── */
 .site-footer {
-  background: var(--c-dark);
-  color: rgba(255,255,255,0.75);
+  background: #0C1D12;
+  color: rgba(255,255,255,0.72);
   padding-block: clamp(var(--s-16), 6vw, var(--s-24));
+  border-top: 1px solid rgba(15, 118, 84, 0.25);
 }
 
 .footer-grid {
