@@ -114,6 +114,34 @@
     </div>
   </nav>
 
+  <!-- ── PRODUCT CATALOG ────────────────────────────────────── -->
+  <section class="section" id="catalog" aria-labelledby="catalog-heading">
+    <div class="container">
+
+      <header class="section-header">
+        <span class="t-overline" style="display:block;margin-bottom:var(--s-4)">Current Stock · 2025 Season</span>
+        <h2 class="section-header__title" id="catalog-heading">117 Varieties Available</h2>
+        <p class="section-header__body">All plants are cultivated in Kunming, Yunnan at 2,000 m elevation. Product photos will be updated with real farm images — contact us via WhatsApp to receive photos of current stock.</p>
+      </header>
+
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:var(--s-10)">
+        <div class="catalog-filter" role="group" aria-label="Filter varieties" id="catalog-filter">
+          <button class="catalog-filter__btn is-active" data-filter="all">All</button>
+          <button class="catalog-filter__btn" data-filter="aeonium">Aeonium</button>
+          <button class="catalog-filter__btn" data-filter="echeveria">Echeveria</button>
+          <button class="catalog-filter__btn" data-filter="specimen">Specimens / 老桩</button>
+          <button class="catalog-filter__btn" data-filter="crested">Crested / 缀化</button>
+          <button class="catalog-filter__btn" data-filter="plug">Plug Trays / 穴盘</button>
+          <button class="catalog-filter__btn" data-filter="potted">Potted / 盆苗</button>
+        </div>
+        <span class="catalog-count" id="catalog-count">117 varieties</span>
+      </div>
+
+      <div class="product-grid" id="product-grid"></div>
+
+    </div>
+  </section>
+
   <!-- INTRO: WHY CHINA SUCCULENTS -->
   <section class="section" aria-labelledby="why-heading">
     <div class="container">
@@ -412,6 +440,207 @@
   </div>
 </footer>
 
+<script>
+(function () {
+  // ── Product data from Succulent Catalog.xlsx ──────────────────
+  // Fields: n=name, g=genus, t=type, s=size (crown width cm)
+  var P = [
+    // ── AEONIUM (景天科莲花掌属) — Mature & Standard ────────────
+    {n:"浣纱老桩大群",       g:"aeonium",  t:"specimen", s:"35–40 cm"},
+    {n:"鸿运群生",           g:"aeonium",  t:"cluster",  s:"20–25 cm"},
+    {n:"水墨丹青",           g:"aeonium",  t:"standard", s:"40–45 cm"},
+    {n:"倾城",               g:"aeonium",  t:"standard", s:"20–25 cm"},
+    {n:"恶魔之眼单头",       g:"aeonium",  t:"standard", s:"20–25 cm"},
+    {n:"红粉佳人老桩大群",   g:"aeonium",  t:"specimen", s:"35–40 cm"},
+    {n:"黑魔锦",             g:"aeonium",  t:"standard", s:"20–25 cm"},
+    {n:"粉女郎老桩大群",     g:"aeonium",  t:"specimen", s:"30–35 cm"},
+    {n:"红颜老桩大群",       g:"aeonium",  t:"specimen", s:"30–35 cm"},
+    {n:"红猫",               g:"aeonium",  t:"standard", s:"20–25 cm"},
+    {n:"粉女巫老桩",         g:"aeonium",  t:"specimen", s:"25–30 cm"},
+    {n:"伯爵天骄",           g:"aeonium",  t:"standard", s:"25–30 cm"},
+    {n:"男神老桩大群",       g:"aeonium",  t:"specimen", s:"30–35 cm"},
+    {n:"桃花坞小群",         g:"aeonium",  t:"cluster",  s:"15–20 cm"},
+    {n:"缤纷秋色小群",       g:"aeonium",  t:"cluster",  s:"15–20 cm"},
+    // ── AEONIUM — Crested / 缀化 ─────────────────────────────
+    {n:"花月夜缀",           g:"aeonium",  t:"crested",  s:"~25 cm"},
+    {n:"雨花石缀",           g:"aeonium",  t:"crested",  s:"25–30 cm"},
+    {n:"黑美人缀",           g:"aeonium",  t:"crested",  s:"20–25 cm"},
+    {n:"海王缀",             g:"aeonium",  t:"crested",  s:"20–25 cm"},
+    {n:"绿破缀",             g:"aeonium",  t:"crested",  s:"20–25 cm"},
+    {n:"荔枝缀 (S)",         g:"aeonium",  t:"crested",  s:"20–25 cm"},
+    {n:"荔枝缀 (L)",         g:"aeonium",  t:"crested",  s:"25–30 cm"},
+    {n:"倾城缀 (S)",         g:"aeonium",  t:"crested",  s:"20–25 cm"},
+    {n:"倾城缀 (L)",         g:"aeonium",  t:"crested",  s:"25–30 cm"},
+    {n:"韶华缀",             g:"aeonium",  t:"crested",  s:"25–30 cm"},
+    // ── AEONIUM — Standard (continued) ───────────────────────
+    {n:"糖心锦",             g:"aeonium",  t:"standard", s:"25–30 cm"},
+    {n:"初恋 (S)",           g:"aeonium",  t:"standard", s:"25–30 cm"},
+    {n:"红魔女",             g:"aeonium",  t:"standard", s:"25–30 cm"},
+    {n:"樱花",               g:"aeonium",  t:"standard", s:"20–25 cm"},
+    {n:"月华 (S)",           g:"aeonium",  t:"standard", s:"25–30 cm"},
+    {n:"恶魔之眼大单头",     g:"aeonium",  t:"standard", s:"30–35 cm"},
+    {n:"巫毒拉丝锦",         g:"aeonium",  t:"standard", s:"30–35 cm"},
+    {n:"白凤群",             g:"aeonium",  t:"cluster",  s:"25–30 cm"},
+    {n:"颜如玉老桩大群",     g:"aeonium",  t:"specimen", s:"35–40 cm"},
+    {n:"赤焰莲锦 (L)",       g:"aeonium",  t:"standard", s:"25–30 cm"},
+    {n:"粉彤",               g:"aeonium",  t:"standard", s:"25–30 cm"},
+    {n:"初恋 (L)",           g:"aeonium",  t:"standard", s:"30–35 cm"},
+    {n:"知否 (S)",           g:"aeonium",  t:"standard", s:"25–30 cm"},
+    {n:"粉海王",             g:"aeonium",  t:"standard", s:"25–30 cm"},
+    {n:"爱丽丝",             g:"aeonium",  t:"standard", s:"25–30 cm"},
+    {n:"爱丽丝大群",         g:"aeonium",  t:"cluster",  s:"30–35 cm"},
+    {n:"芙蕖",               g:"aeonium",  t:"standard", s:"25–30 cm"},
+    {n:"霁月 (L)",           g:"aeonium",  t:"standard", s:"25–30 cm"},
+    {n:"荔枝",               g:"aeonium",  t:"standard", s:"20–25 cm"},
+    {n:"香妃",               g:"aeonium",  t:"standard", s:"25–30 cm"},
+    {n:"布加迪大群",         g:"aeonium",  t:"specimen", s:"40–45 cm"},
+    {n:"海仙",               g:"aeonium",  t:"standard", s:"25–30 cm"},
+    {n:"倾颜",               g:"aeonium",  t:"standard", s:"25–30 cm"},
+    {n:"纳福 (S)",           g:"aeonium",  t:"standard", s:"20–25 cm"},
+    {n:"缤纷秋色老桩大群",   g:"aeonium",  t:"specimen", s:"35–40 cm"},
+    {n:"恶魔之眼群生",       g:"aeonium",  t:"cluster",  s:"25–30 cm"},
+    {n:"红铜超白",           g:"aeonium",  t:"standard", s:"20–30 cm"},
+    {n:"海王",               g:"aeonium",  t:"standard", s:"30–35 cm"},
+    {n:"美杜莎",             g:"aeonium",  t:"standard", s:"30–35 cm"},
+    {n:"莲雾糖心",           g:"aeonium",  t:"standard", s:"30–35 cm"},
+    {n:"男神",               g:"aeonium",  t:"standard", s:"30–35 cm"},
+    {n:"丽娜",               g:"aeonium",  t:"standard", s:"20–30 cm"},
+    {n:"女郎",               g:"aeonium",  t:"standard", s:"30–35 cm"},
+    {n:"黑魔锦 (L)",         g:"aeonium",  t:"standard", s:"30–35 cm"},
+    {n:"纳福 (L)",           g:"aeonium",  t:"standard", s:"20–30 cm"},
+    {n:"轮回",               g:"aeonium",  t:"standard", s:"30–35 cm"},
+    {n:"知否 (L)",           g:"aeonium",  t:"standard", s:"20–30 cm"},
+    {n:"半糖",               g:"aeonium",  t:"standard", s:"30–40 cm"},
+    {n:"香奈儿",             g:"aeonium",  t:"standard", s:"20–30 cm"},
+    {n:"如意",               g:"aeonium",  t:"standard", s:"20–30 cm"},
+    {n:"孔雀翎",             g:"aeonium",  t:"standard", s:"30–40 cm"},
+    {n:"月华 (L)",           g:"aeonium",  t:"standard", s:"20–30 cm"},
+    {n:"霁月 (S)",           g:"aeonium",  t:"standard", s:"20–30 cm"},
+    // ── AEONIUM — Plug Trays / 穴盘 ─────────────────────────
+    {n:"缤纷秋色穴盘小群",   g:"aeonium",  t:"plug",     s:"10–12 cm"},
+    {n:"孔雀翎穴盘",         g:"aeonium",  t:"plug",     s:"5–8 cm"},
+    {n:"恶魔之眼穴盘",       g:"aeonium",  t:"plug",     s:"5–8 cm"},
+    {n:"海仙穴盘苗",         g:"aeonium",  t:"plug",     s:"5–8 cm"},
+    {n:"克拉恋人穴盘",       g:"aeonium",  t:"plug",     s:"4–6 cm"},
+    {n:"海王穴盘",           g:"aeonium",  t:"plug",     s:"5–8 cm"},
+    {n:"桃花坞穴盘",         g:"aeonium",  t:"plug",     s:"5–8 cm"},
+    {n:"黑魔锦穴盘",         g:"aeonium",  t:"plug",     s:"5–8 cm"},
+    {n:"水中月穴盘",         g:"aeonium",  t:"plug",     s:"5–8 cm"},
+    {n:"粉冠穴盘 (S)",       g:"aeonium",  t:"plug",     s:"4–6 cm"},
+    {n:"魔丸穴盘 (S)",       g:"aeonium",  t:"plug",     s:"4–6 cm"},
+    {n:"满江红穴盘",         g:"aeonium",  t:"plug",     s:"4–6 cm"},
+    {n:"伯爵天骄穴盘",       g:"aeonium",  t:"plug",     s:"5–8 cm"},
+    {n:"万花筒穴盘",         g:"aeonium",  t:"plug",     s:"5–8 cm"},
+    {n:"糖心锦穴盘",         g:"aeonium",  t:"plug",     s:"5–8 cm"},
+    {n:"魔丸穴盘 (L)",       g:"aeonium",  t:"plug",     s:"5–8 cm"},
+    {n:"缤纷秋色穴盘 (S)",   g:"aeonium",  t:"plug",     s:"4–6 cm"},
+    {n:"缤纷秋色穴盘 (L)",   g:"aeonium",  t:"plug",     s:"5–8 cm"},
+    {n:"红猫穴盘",           g:"aeonium",  t:"plug",     s:"5–8 cm"},
+    {n:"粉冠穴盘 (L)",       g:"aeonium",  t:"plug",     s:"5–8 cm"},
+    {n:"粉玉芙蓉穴盘",       g:"aeonium",  t:"plug",     s:"5–8 cm"},
+    {n:"粉花妖穴盘",         g:"aeonium",  t:"plug",     s:"5–8 cm"},
+    {n:"赤焰莲锦穴盘",       g:"aeonium",  t:"plug",     s:"4–6 cm"},
+    {n:"锦鲤穴盘",           g:"aeonium",  t:"plug",     s:"5–8 cm"},
+    {n:"镜花水月穴盘",       g:"aeonium",  t:"plug",     s:"5–8 cm"},
+    {n:"倾城穴盘",           g:"aeonium",  t:"plug",     s:"5–8 cm"},
+    {n:"月华穴盘",           g:"aeonium",  t:"plug",     s:"5–8 cm"},
+    {n:"胭脂水粉穴盘",       g:"aeonium",  t:"plug",     s:"5–8 cm"},
+    // ── AEONIUM — Potted / 盆苗 ──────────────────────────────
+    {n:"如意（12杯）",       g:"aeonium",  t:"potted",   s:"10–15 cm"},
+    {n:"魅影（12杯）",       g:"aeonium",  t:"potted",   s:"10–15 cm"},
+    {n:"樱花（12杯）",       g:"aeonium",  t:"potted",   s:"10–15 cm"},
+    {n:"粉冠（12杯）",       g:"aeonium",  t:"potted",   s:"10–15 cm"},
+    {n:"魔丸（12杯）",       g:"aeonium",  t:"potted",   s:"10–15 cm"},
+    // ── ECHEVERIA (景天科拟石莲属) ────────────────────────────
+    {n:"赫菲斯托（12杯）",       g:"echeveria", t:"potted",  s:"12–15 cm"},
+    {n:"赫菲斯托双头（12杯）",   g:"echeveria", t:"potted",  s:"12–15 cm"},
+    {n:"赫菲斯托母本（17杯）",   g:"echeveria", t:"potted",  s:"15–18 cm"},
+    {n:"奥普琳娜锦（90杯）",     g:"echeveria", t:"potted",  s:"10–12 cm"},
+    {n:"奥普琳娜锦（12杯）",     g:"echeveria", t:"potted",  s:"12–15 cm"},
+    {n:"紫蝴蝶锦群（12杯）",     g:"echeveria", t:"cluster", s:"12–15 cm"},
+    {n:"紫乐锦（90杯）",         g:"echeveria", t:"potted",  s:"8–10 cm"},
+    {n:"黑水晶锦（12杯）",       g:"echeveria", t:"potted",  s:"8–12 cm"},
+    {n:"红灯（22杯）",           g:"echeveria", t:"potted",  s:"15–20 cm"},
+    {n:"可爱玫瑰锦（90杯）",     g:"echeveria", t:"potted",  s:"5–9 cm"},
+    {n:"雪球锦（12杯）",         g:"echeveria", t:"potted",  s:"10–12 cm"},
+    {n:"雪球锦（90杯）",         g:"echeveria", t:"potted",  s:"7–9 cm"},
+    {n:"桃蛋锦（12杯）",         g:"echeveria", t:"potted",  s:"5–8 cm"},
+    {n:"桃蛋锦群",               g:"echeveria", t:"cluster", s:"12–15 cm"},
+    {n:"紫蝴蝶锦单头（12杯）",   g:"echeveria", t:"potted",  s:"10–12 cm"},
+    {n:"紫蝴蝶锦单头（90杯）",   g:"echeveria", t:"potted",  s:"6–9 cm"}
+  ];
+
+  var typeMeta = {
+    specimen: {label:"Specimen", cls:"pill--specimen"},
+    crested:  {label:"Crested",  cls:"pill--crested"},
+    cluster:  {label:"Cluster",  cls:"pill--cluster"},
+    plug:     {label:"Plug Tray",cls:"pill--plug"},
+    potted:   {label:"Potted",   cls:"pill--potted"},
+    standard: {label:"",         cls:""}
+  };
+
+  var PLACEHOLDER = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">' +
+    '<g opacity=".55" fill="#0F7654">' +
+    '<ellipse cx="40" cy="40" rx="7" ry="18" transform="rotate(0 40 40)"/>' +
+    '<ellipse cx="40" cy="40" rx="7" ry="18" transform="rotate(40 40 40)"/>' +
+    '<ellipse cx="40" cy="40" rx="7" ry="18" transform="rotate(80 40 40)"/>' +
+    '<ellipse cx="40" cy="40" rx="7" ry="18" transform="rotate(120 40 40)"/>' +
+    '<ellipse cx="40" cy="40" rx="7" ry="18" transform="rotate(160 40 40)"/>' +
+    '<ellipse cx="40" cy="40" rx="7" ry="18" transform="rotate(200 40 40)"/>' +
+    '<ellipse cx="40" cy="40" rx="7" ry="18" transform="rotate(240 40 40)"/>' +
+    '<ellipse cx="40" cy="40" rx="7" ry="18" transform="rotate(280 40 40)"/>' +
+    '<ellipse cx="40" cy="40" rx="7" ry="18" transform="rotate(320 40 40)"/>' +
+    '</g><circle cx="40" cy="40" r="7" fill="#0F7654" opacity=".7"/>' +
+    '</svg>';
+
+  function wa(name) {
+    return 'https://wa.me/8618685816496?text=' +
+      encodeURIComponent('Hi SouthQuest, I\'m interested in: ' + name + '. Please share availability and photos.');
+  }
+
+  function renderCards(filter) {
+    var grid = document.getElementById('product-grid');
+    var count = 0;
+    var html = '';
+    P.forEach(function(p) {
+      var show = filter === 'all' || p.g === filter || p.t === filter;
+      if (show) count++;
+      var tm = typeMeta[p.t] || typeMeta.standard;
+      var pill = tm.label
+        ? '<span class="product-card__type-pill ' + tm.cls + '">' + tm.label + '</span>'
+        : '';
+      var genusCls  = 'genus--' + p.g;
+      var genusLabel = p.g === 'aeonium' ? 'Aeonium' : 'Echeveria';
+      html += '<div class="product-card' + (show ? '' : ' product-card--hidden') + '" data-genus="' + p.g + '" data-type="' + p.t + '">' +
+        '<div class="product-card__img">' +
+          '<div class="product-card__placeholder">' + PLACEHOLDER + '</div>' +
+          pill +
+        '</div>' +
+        '<div class="product-card__body">' +
+          '<h3 class="product-card__name">' + p.n + '</h3>' +
+          '<div class="product-card__tag-row">' +
+            '<span class="product-card__genus ' + genusCls + '">' + genusLabel + '</span>' +
+          '</div>' +
+          '<div class="product-card__size">Crown: ' + p.s + '</div>' +
+          '<div class="product-card__cta"><a href="' + wa(p.n) + '" target="_blank" rel="noopener">Inquire</a></div>' +
+        '</div>' +
+      '</div>';
+    });
+    grid.innerHTML = html;
+    document.getElementById('catalog-count').textContent = count + ' varieties';
+  }
+
+  renderCards('all');
+
+  document.getElementById('catalog-filter').addEventListener('click', function(e) {
+    var btn = e.target.closest('.catalog-filter__btn');
+    if (!btn) return;
+    document.querySelectorAll('.catalog-filter__btn').forEach(function(b) { b.classList.remove('is-active'); });
+    btn.classList.add('is-active');
+    renderCards(btn.dataset.filter);
+  });
+})();
+</script>
 <script src="/public/assets/js/main.js" defer></script>
 </body>
 </html>
