@@ -1,0 +1,11 @@
+# System
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+
+# Claude Code (local config only, not needed in repo)
+.claude/settings.local.json

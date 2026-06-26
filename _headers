@@ -1,0 +1,46 @@
+# Cloudflare Pages — HTTP Response Headers
+# succulentsfarm.com
+
+# ── Global Security Headers ─────────────────────────────────
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://images.unsplash.com data:; media-src 'self'; connect-src 'self'; frame-src 'none';
+
+# ── Long-Term Edge Caching — WebP Imagery ──────────────────
+/public/assets/img/*.webp
+  Cache-Control: public, max-age=31536000, immutable
+
+/public/assets/img/*.jpg
+  Cache-Control: public, max-age=31536000, immutable
+
+/public/assets/img/*.png
+  Cache-Control: public, max-age=31536000, immutable
+
+/public/assets/img/*.avif
+  Cache-Control: public, max-age=31536000, immutable
+
+# ── Long-Term Caching — Video ───────────────────────────────
+/public/assets/video/*
+  Cache-Control: public, max-age=2592000
+
+# ── Long-Term Caching — CSS & JS (versioned at deploy) ─────
+/public/assets/css/*.css
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+
+/public/assets/js/*.js
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+
+# ── HTML — Short Cache (content updates frequently) ─────────
+/*.html
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+# ── Fonts — Long-Term Cache ─────────────────────────────────
+/public/assets/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
