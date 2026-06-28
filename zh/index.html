@@ -58,7 +58,7 @@
   <link rel="manifest" href="/site.webmanifest" />
   <meta name="theme-color" content="#0F7654" />
   <meta name="format-detection" content="telephone=no" />
-  <link rel="stylesheet" href="/public/assets/css/styles.css?v=20260628a" />
+  <link rel="stylesheet" href="/public/assets/css/styles.css?v=20260628c" />
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
 <body>
@@ -124,8 +124,28 @@
 <main id="main-content">
 <section class="hero" aria-labelledby="hero-heading">
 
+  <!-- Full-bleed background -->
+  <div class="hero__media" aria-hidden="true">
+    <img
+      src="/public/assets/img/products/aeonium-huansha-specimen-cluster.jpg"
+      alt=""
+      fetchpriority="high"
+      decoding="async"
+    />
+  </div>
+
+  <div class="hero__video-label">
+      <div class="hero__video-label-text">
+        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" style="display:inline-block;margin-right:5px;vertical-align:middle"><circle cx="5" cy="5" r="4" fill="#0F7654"/></svg>云南 · 昆明
+      </div>
+      <div class="hero__video-label-sub">海拔2,000m · 云雾林</div>
+    </div>
+
+  <!-- Foreground text -->
   <div class="hero__content">
-    <div class="hero__eyebrow">
+    <div class="hero__content-inner">
+
+<div class="hero__eyebrow">
       <span class="hero__dot" aria-hidden="true"></span>
       <span class="badge badge--green">中国云南 · 海拔2,000m</span>
     </div>
@@ -165,30 +185,7 @@
         <div class="hero__stat-label">出口国家</div>
       </div>
     </div>
-  </div>
 
-  <div class="hero__media">
-    <video
-      class="hero__video"
-      autoplay
-      muted
-      loop
-      playsinline
-      poster="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1400&q=85&auto=format"
-      aria-label="SouthQuest Farm 温室实景 — 云南高地"
-    >
-      <!-- TODO: uncomment when farm-hero.mp4 is uploaded
-
-      <source src="/public/assets/video/farm-hero.mp4" type="video/mp4" />
-
-      -->
-    </video>
-
-    <div class="hero__video-label">
-      <div class="hero__video-label-text">
-        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" style="display:inline-block;margin-right:5px;vertical-align:middle"><circle cx="5" cy="5" r="4" fill="#0F7654"/></svg>云南 · 昆明
-      </div>
-      <div class="hero__video-label-sub">海拔2,000m · 云雾林</div>
     </div>
   </div>
 
@@ -388,7 +385,7 @@
 
       <article class="species-card reveal">
         <img
-          src="https://images.unsplash.com/photo-1509423350716-97f9360b4e09?w=800&q=80&auto=format&fit=crop"
+          src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=800&q=80&auto=format&fit=crop"
           alt="深色莲座、极具张力的高端莲花掌标本株 — SouthQuest Farm"
           class="species-card__img"
           loading="lazy"
@@ -755,6 +752,6 @@
   </div>
 </footer>
 
-<script src="/public/assets/js/main.js?v=20260628a" defer></script>
+<script src="/public/assets/js/main.js?v=20260628c" defer></script>
 </body>
 </html>
