@@ -8,6 +8,12 @@
   <link rel="canonical" href="https://succulentsfarm.com/privacy.html" />
   <link rel="preconnect" href="https://fonts.loli.net" crossorigin />
   
+    <!-- Icons + Manifest + Theme -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#0F7654" />
+  <meta name="format-detection" content="telephone=no" />
   <link rel="stylesheet" href="/public/assets/css/styles.css" />
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
@@ -28,10 +34,12 @@
     </nav>
     <div class="site-header__actions">
       <div class="lang-selector">
-        <button class="lang-btn is-active" data-lang="en">EN</button>
-        <button class="lang-btn" data-lang="ja">JP</button>
-        <button class="lang-btn" data-lang="zh">中文</button>
-        <button class="lang-btn" data-lang="kr">한국어</button>
+        <a class="lang-btn is-active" href="/" hreflang="en" aria-current="true">EN</a>
+        <a class="lang-btn" href="/ja/" hreflang="ja">JP</a>
+        <a class="lang-btn" href="/zh/" hreflang="zh">中文</a>
+        <a class="lang-btn" href="/ko/" hreflang="ko">한국어</a>
+        <a class="lang-btn" href="/vi/" hreflang="vi">VI</a>
+        <a class="lang-btn" href="/ar/" hreflang="ar">عربي</a>
       </div>
       <a href="/#rfq" class="btn btn--primary btn--sm">Request Quote</a>
     </div>

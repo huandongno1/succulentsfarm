@@ -8,13 +8,24 @@
   <meta name="keywords" content="succulent wholesale export, China succulents, Aeonium wholesale, Echeveria export, Yunnan succulents, phytosanitary succulents, B2B succulent supplier" />
   <link rel="canonical" href="https://succulentsfarm.com/" />
 
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="en" href="https://succulentsfarm.com/" />
+  <link rel="alternate" hreflang="ja" href="https://succulentsfarm.com/ja/" />
+  <link rel="alternate" hreflang="zh" href="https://succulentsfarm.com/zh/" />
+  <link rel="alternate" hreflang="ko" href="https://succulentsfarm.com/ko/" />
+  <link rel="alternate" hreflang="vi" href="https://succulentsfarm.com/vi/" />
+  <link rel="alternate" hreflang="ar" href="https://succulentsfarm.com/ar/" />
+  <link rel="alternate" hreflang="x-default" href="https://succulentsfarm.com/" />
+
   <!-- Open Graph -->
   <meta property="og:title" content="SouthQuest Farm — Premium Succulent Export" />
-  <meta property="og:description" content="Wholesale succulents from Yunnan's cloud-forest highlands. 200+ varieties, 40+ countries, impeccable compliance." />
+  <meta property="og:description" content="Wholesale succulents from Yunnan's cloud-forest highlands. 117 hand-picked varieties, 40+ countries, impeccable compliance." />
   <meta property="og:url" content="https://succulentsfarm.com/" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://succulentsfarm.com/public/assets/img/og-cover.jpg" />
 
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://succulentsfarm.com/public/assets/img/og-cover.jpg" />
   <!-- Structured Data: Organization -->
   <script type="application/ld+json">
   {
@@ -41,6 +52,12 @@
 
   <link rel="preconnect" href="https://fonts.loli.net" crossorigin />
   
+    <!-- Icons + Manifest + Theme -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#0F7654" />
+  <meta name="format-detection" content="telephone=no" />
   <link rel="stylesheet" href="/public/assets/css/styles.css" />
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
@@ -70,10 +87,12 @@
     <!-- Actions -->
     <div class="site-header__actions">
       <div class="lang-selector" role="group" aria-label="Language selection">
-        <button class="lang-btn is-active" data-lang="en" aria-pressed="true">EN</button>
-        <button class="lang-btn" data-lang="ja" aria-pressed="false">JP</button>
-        <button class="lang-btn" data-lang="zh" aria-pressed="false">中文</button>
-        <button class="lang-btn" data-lang="kr" aria-pressed="false">한국어</button>
+        <a class="lang-btn is-active" href="/" hreflang="en" aria-current="true">EN</a>
+        <a class="lang-btn" href="/ja/" hreflang="ja">JP</a>
+        <a class="lang-btn" href="/zh/" hreflang="zh">中文</a>
+        <a class="lang-btn" href="/ko/" hreflang="ko">한국어</a>
+        <a class="lang-btn" href="/vi/" hreflang="vi">VI</a>
+        <a class="lang-btn" href="/ar/" hreflang="ar">عربي</a>
       </div>
       <a href="#rfq" class="btn btn--primary btn--sm" data-i18n="nav.cta">Request Quote</a>
     </div>
@@ -147,8 +166,8 @@
         <div class="hero__stat-label" data-i18n="hero.stat1l">Years Growing</div>
       </div>
       <div class="hero__stat">
-        <div class="hero__stat-value" data-i18n="hero.stat2v">200+</div>
-        <div class="hero__stat-label" data-i18n="hero.stat2l">Varieties</div>
+        <div class="hero__stat-value">117</div>
+        <div class="hero__stat-label">Varieties in Stock</div>
       </div>
       <div class="hero__stat">
         <div class="hero__stat-value" data-i18n="hero.stat3v">40+</div>
@@ -168,8 +187,10 @@
       poster="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1400&q=85&auto=format"
       aria-label="SouthQuest Farm greenhouse footage — Yunnan highlands"
     >
-      <!-- Replace src with your actual farm video file -->
+      <!-- TODO: uncomment when farm-hero.mp4 is uploaded to /public/assets/video/
       <source src="/public/assets/video/farm-hero.mp4" type="video/mp4" />
+      -->
+      Your browser does not support the video tag.
     </video>
 
     <!-- Floating info badge -->
@@ -194,8 +215,8 @@
       <div class="trust-item__label" data-i18n="trust.1l">Farm Heritage</div>
     </div>
     <div class="trust-item reveal reveal-delay-1">
-      <div class="trust-item__value" data-i18n="trust.2v">200+</div>
-      <div class="trust-item__label" data-i18n="trust.2l">Live Varieties</div>
+      <div class="trust-item__value">117</div>
+      <div class="trust-item__label">Live Varieties</div>
     </div>
     <div class="trust-item reveal reveal-delay-2">
       <div class="trust-item__value" data-i18n="trust.3v">40+</div>
@@ -356,7 +377,7 @@
           Nestled in Yunnan's natural greenhouse — where subtropical sun meets cool cloud-forest air — our Kunming base produces succulents with unmatched colour saturation, root development, and transit resilience that farms at lower altitudes simply cannot replicate.
         </p>
         <p style="font-size:var(--t-sm);color:var(--c-text-2);line-height:1.8;margin-bottom:2rem">
-          Over 11 years, we've refined every step: from soil composition and irrigation cycles to the precise pre-shipment drying protocols and cotton-wrapping techniques that keep plants healthy for 7–21 day transit windows. Our facilities span 50,000 m² of shaded greenhouse space, producing over 200 named varieties of Aeonium, Echeveria, Sedum, and rare hybrids.
+          Over 11 years, we've refined every step: from soil composition and irrigation cycles to the precise pre-shipment drying protocols and cotton-wrapping techniques that keep plants healthy for 7–21 day transit windows. Our facilities span 50,000 m² of shaded greenhouse space, with 117 named varieties of Aeonium, Echeveria, Sedum, and rare hybrids currently in export rotation.
         </p>
         <a href="/about" class="btn btn--outline">
           Discover the Farm
@@ -734,7 +755,7 @@
         </div>
         <div class="footer-contact__item">
           <span class="footer-contact__icon">💬</span>
-          <span>WhatsApp preferred — replace 8618685816496 in code</span>
+          <span>WhatsApp preferred · +86 186 8581 6496</span>
         </div>
         <div style="margin-top:var(--s-5)">
           <a

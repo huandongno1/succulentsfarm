@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -10,6 +10,8 @@
   <meta property="og:description" content="11 years of growing premium succulents in the cloud-forest highlands of Yunnan Province, China. 50,000m² of greenhouse estate. 200+ varieties. 40+ countries." />
   <meta property="og:url" content="https://succulentsfarm.com/about" />
 
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://succulentsfarm.com/public/assets/img/og-cover.jpg" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -28,6 +30,12 @@
 
   <link rel="preconnect" href="https://fonts.loli.net" crossorigin />
   
+    <!-- Icons + Manifest + Theme -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#0F7654" />
+  <meta name="format-detection" content="telephone=no" />
   <link rel="stylesheet" href="/public/assets/css/styles.css" />
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
@@ -49,10 +57,12 @@
     </nav>
     <div class="site-header__actions">
       <div class="lang-selector" role="group" aria-label="Language selection">
-        <button class="lang-btn is-active" data-lang="en" aria-pressed="true">EN</button>
-        <button class="lang-btn" data-lang="ja" aria-pressed="false">JP</button>
-        <button class="lang-btn" data-lang="zh" aria-pressed="false">中文</button>
-        <button class="lang-btn" data-lang="kr" aria-pressed="false">한국어</button>
+        <a class="lang-btn is-active" href="/" hreflang="en" aria-current="true">EN</a>
+        <a class="lang-btn" href="/ja/" hreflang="ja">JP</a>
+        <a class="lang-btn" href="/zh/" hreflang="zh">中文</a>
+        <a class="lang-btn" href="/ko/" hreflang="ko">한국어</a>
+        <a class="lang-btn" href="/vi/" hreflang="vi">VI</a>
+        <a class="lang-btn" href="/ar/" hreflang="ar">عربي</a>
       </div>
       <a href="/#rfq" class="btn btn--primary btn--sm" data-i18n="nav.cta">Request Quote</a>
     </div>
@@ -161,7 +171,7 @@
     <div class="container">
       <div style="max-width:860px;margin-inline:auto;text-align:center" class="reveal">
         <span class="t-overline" style="display:block;margin-bottom:var(--s-4)">Our Philosophy</span>
-        <h2 style="font-family:var(--font-serif);font-size:clamp(var(--t-3xl),4.5vw,var(--t-6xl));font-weight:700;font-style:italic;line-height:1.1;letter-spacing:-0.02em;color:var(--c-text);margin-bottom:var(--s-6)" id="philosophy-heading">
+        <h2 style="font-family:var(--font-sans);font-size:clamp(var(--t-2xl),3.5vw,var(--t-4xl));font-weight:600;line-height:1.25;letter-spacing:-0.02em;color:var(--c-text);margin-bottom:var(--s-6)" id="philosophy-heading">
           "Every plant that leaves our farm is a direct extension of our reputation."
         </h2>
         <p style="font-size:var(--t-lg);color:var(--c-text-2);line-height:1.75;max-width:640px;margin-inline:auto;margin-bottom:var(--s-8)">
