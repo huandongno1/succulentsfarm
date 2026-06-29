@@ -1,25 +1,36 @@
 # Cloudflare Pages — Redirect Rules
 # succulentsfarm.com
-# NOTE: Cloudflare Pages serves clean URLs natively (/about → about.html).
-#       No 200 rewrites needed — they conflict with CF's built-in routing.
+# NOTE: Cloudflare Pages serves clean URLs natively (/foo → foo/index.html).
+#       301 = permanent redirect (preserves SEO).
 
-# ── Legacy / Alternative Spellings ──────────────────────────────────────────
-/farm               /about              301
-/our-farm           /about              301
-/plants             /succulents/        301
-/catalogue          /succulents/        301
-/catalog            /succulents/        301
-/compliance         /export-compliance/ 301
-/phytosanitary      /export-compliance/ 301
-/usa                /countries/usa      301
-/united-states      /countries/usa      301
+# ── M2: Architecture restructure (June 2026) ───────────────────────────────
+# Old URLs from the pre-restructure layout → new shipping URLs.
+/succulents/        /products/                      301
+/succulents         /products/                      301
+/about              /farm/                          301
+/about.html         /farm/                          301
+/about/             /farm/                          301
+/export-compliance/ /export/                        301
+/export-compliance  /export/                        301
+/countries/usa      /resources/countries/usa/       301
+/countries/usa/     /resources/countries/usa/       301
+/countries/usa.html /resources/countries/usa/       301
+/countries          /resources/countries/usa/       301
+/countries/         /resources/countries/usa/       301
 
-# ── Contact / Quote Alias ───────────────────────────────────────────────────
-/quote              /#rfq               301
-/contact            /#rfq               301
-/rfq                /#rfq               301
-/enquiry            /#rfq               301
+# ── Marketing aliases / common alternate spellings ─────────────────────────
+/farm-story         /farm/                          301
+/our-farm           /farm/                          301
+/plants             /products/                      301
+/catalogue          /products/                      301
+/catalog            /products/                      301
+/compliance         /export/                        301
+/phytosanitary      /export/                        301
+/usa                /resources/countries/usa/       301
+/united-states      /resources/countries/usa/       301
 
-# ── Trailing Slash Normalisation ─────────────────────────────────────────────
-/about/             /about              301
-/countries/usa/     /countries/usa      301
+# ── Contact / Quote aliases (RFQ form still lives at /#rfq until M3 ships /contact/)
+/quote              /#rfq                           301
+/contact            /#rfq                           301
+/rfq                /#rfq                           301
+/enquiry            /#rfq                           301
