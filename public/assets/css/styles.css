@@ -377,6 +377,16 @@ input, textarea, select { font-family: inherit; }
   background: rgba(255,255,255,0.12);
 }
 
+/* ─── Active nav item indicator ─── */
+.site-nav__link[aria-current="page"] {
+  color: var(--c-primary);
+  background: var(--c-primary-lt);
+}
+.site-header.is-transparent .site-nav__link[aria-current="page"] {
+  color: var(--c-white);
+  background: rgba(255,255,255,0.15);
+}
+
 .site-header__actions {
   display: flex;
   align-items: center;

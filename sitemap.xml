@@ -25,12 +25,44 @@
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+  <url>
+    <loc>https://succulentsfarm.com/products/aeonium/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://succulentsfarm.com/products/echeveria/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
 
   <!-- Export -->
   <url>
     <loc>https://succulentsfarm.com/export/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <!-- Countries -->
+  <url>
+    <loc>https://succulentsfarm.com/countries/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://succulentsfarm.com/countries/usa/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://succulentsfarm.com/countries/japan/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://succulentsfarm.com/countries/korea/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
   <!-- Farm -->
@@ -40,11 +72,18 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Resources / Countries -->
+  <!-- Resources -->
   <url>
-    <loc>https://succulentsfarm.com/resources/countries/usa/</loc>
+    <loc>https://succulentsfarm.com/resources/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://succulentsfarm.com/contact/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
 
   <!-- Legal -->
