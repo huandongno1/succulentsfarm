@@ -21,9 +21,9 @@
   --c-text:          #1C1E1D;
   --c-text-2:        #4A4E4C;
   --c-text-3:        #8A8F8B;
-  --c-accent-bg:     #E8E3F5;
-  --c-accent:        #6D55B4;
-  --c-accent-dk:     #5644A0;
+  --c-accent-bg:     #F3E9EA;
+  --c-accent:        #320E1A;
+  --c-accent-dk:     #5C3644;
   --c-border:        #E4E0D8;
   --c-white:         #FFFFFF;
   --c-dark:          #111412;
@@ -322,10 +322,24 @@ input, textarea, select { font-family: inherit; }
 
 .site-logo {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap: var(--s-2);
   line-height: 1;
   text-decoration: none;
   flex-shrink: 0;
+}
+
+.site-logo__mark {
+  height: 34px;
+  width: auto;
+  display: block;
+  flex-shrink: 0;
+}
+
+.site-logo__text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
 }
 
 .site-logo__name {
