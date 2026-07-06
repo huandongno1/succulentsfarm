@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Our Farm Story — SouthQuest Farm | 11 Years Growing in Yunnan, China</title>
   <meta name="description" content="Meet SouthQuest Farm — established 2013 in Kunming, Yunnan, China. Discover our 50,000m² greenhouse estate, our 11-year sourcing lineage, and the philosophy that drives the world's most trusted succulent export operation." />
-  <link rel="canonical" href="https://succulentsfarm.com/farm/" />
+  <link rel="canonical" href="https://succulentsfarm.com/about/" />
   <meta property="og:title" content="Our Farm Story — SouthQuest Farm" />
-  <meta property="og:description" content="11 years of growing premium succulents in the cloud-forest highlands of Yunnan Province, China. 50,000m² of greenhouse estate. 200+ varieties. 40+ countries." />
-  <meta property="og:url" content="https://succulentsfarm.com/farm/" />
+  <meta property="og:description" content="11 years of growing premium succulents in the cloud-forest highlands of Yunnan Province, China. 50,000m² of greenhouse estate. 117 varieties. 40+ countries." />
+  <meta property="og:url" content="https://succulentsfarm.com/about/" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="https://succulentsfarm.com/public/assets/img/og-cover.jpg" />
@@ -36,7 +36,7 @@
   <link rel="manifest" href="/site.webmanifest" />
   <meta name="theme-color" content="#0F7654" />
   <meta name="format-detection" content="telephone=no" />
-  <link rel="stylesheet" href="/public/assets/css/styles.css?v=20260629a" />
+  <link rel="stylesheet" href="/public/assets/css/styles.css?v=20260706a" />
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
 <body>
@@ -49,12 +49,16 @@
       <span class="site-logo__tagline">Yunnan · Est. 2013</span>
     </a>
     <nav class="site-nav" aria-label="Primary navigation">
-      <a href="/" class="site-nav__link">Home</a>
-      <a href="/products/" class="site-nav__link">Products</a>
-      <a href="/export/" class="site-nav__link">Export</a>
-      <a href="/countries/" class="site-nav__link">Countries</a>
-      <a href="/farm/" class="site-nav__link" aria-current="page">Farm</a>
-      <a href="/resources/" class="site-nav__link">Resources</a>
+      <div class="site-nav__dropdown">
+        <a href="/aeonium/" class="site-nav__link" aria-haspopup="true">Products</a>
+        <div class="site-nav__menu">
+          <a href="/aeonium/" class="site-nav__menu-link">Aeonium</a>
+          <a href="/echeveria/" class="site-nav__menu-link">Echeveria</a>
+        </div>
+      </div>
+      <a href="/export/" class="site-nav__link">Wholesale</a>
+      <a href="/import-succulents-usa/" class="site-nav__link">Import Guides</a>
+      <a href="/about/" class="site-nav__link" aria-current="page">About</a>
       <a href="/contact/" class="site-nav__link">Contact</a>
     </nav>
     <div class="site-header__actions">
@@ -62,7 +66,7 @@
         <a class="lang-btn is-active" href="/" hreflang="en" aria-current="true">EN</a>
         <a class="lang-btn" href="/zh/" hreflang="zh">中文</a>
       </div>
-      <a href="/#rfq" class="btn btn--primary btn--sm" data-i18n="nav.cta">Request Quote</a>
+      <a href="/contact/" class="btn btn--primary btn--sm" data-i18n="nav.cta">Request Quote</a>
     </div>
     <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
       <span class="nav-toggle__bar"></span>
@@ -76,12 +80,11 @@
 <div class="mobile-nav" role="dialog" aria-label="Mobile menu">
   <div class="mobile-nav__backdrop"></div>
   <nav class="mobile-nav__panel">
-    <a href="/" class="mobile-nav__link">Home</a>
-    <a href="/products/" class="mobile-nav__link">Products</a>
-    <a href="/export/" class="mobile-nav__link">Export</a>
-    <a href="/countries/" class="mobile-nav__link">Countries</a>
-    <a href="/farm/" class="mobile-nav__link" aria-current="page">Farm</a>
-    <a href="/resources/" class="mobile-nav__link">Resources</a>
+    <a href="/aeonium/" class="mobile-nav__link">Aeonium</a>
+    <a href="/echeveria/" class="mobile-nav__link">Echeveria</a>
+    <a href="/export/" class="mobile-nav__link">Wholesale</a>
+    <a href="/import-succulents-usa/" class="mobile-nav__link">Import Guides</a>
+    <a href="/about/" class="mobile-nav__link" aria-current="page">About</a>
     <a href="/contact/" class="mobile-nav__link">Contact</a>
     </nav>
 </div>
@@ -177,7 +180,7 @@
         <p style="font-size:var(--t-lg);color:var(--c-text-2);line-height:1.75;max-width:640px;margin-inline:auto;margin-bottom:var(--s-8)">
           We don't operate a catalogue-and-ship model. Every order — whether 12 collector specimens or 12,000 wholesale units — is personally overseen from selection through to customs clearance. That's the SouthQuest difference.
         </p>
-        <a href="/#rfq" class="btn btn--primary btn--lg">Start a Conversation</a>
+        <a href="/contact/" class="btn btn--primary btn--lg">Start a Conversation</a>
       </div>
     </div>
   </section>
@@ -228,7 +231,7 @@
           Whether you're placing your first order or scaling an established program, we're ready to talk.
         </p>
         <div style="display:flex;gap:var(--s-4);justify-content:center;flex-wrap:wrap">
-          <a href="/#rfq" class="btn btn--primary btn--lg">Request a Quote</a>
+          <a href="/contact/" class="btn btn--primary btn--lg">Request a Quote</a>
           <a href="https://wa.me/8618685816496?text=Hi%20SouthQuest%2C%20I%27d%20like%20to%20discuss%20a%20partnership." class="btn btn--whatsapp btn--lg" target="_blank" rel="noopener">
             <svg class="icon-wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
             WhatsApp Our Team
@@ -256,19 +259,17 @@
       <div>
         <div class="footer-col__heading">Explore</div>
         <nav class="footer-nav">
-          <a href="/products/" class="footer-nav__link">Succulents Catalogue</a>
-          <a href="/farm/" class="footer-nav__link">Our Farm Story</a>
+          <a href="/aeonium/" class="footer-nav__link">Succulents Catalogue</a>
+          <a href="/about/" class="footer-nav__link">Our Farm Story</a>
           <a href="/export/" class="footer-nav__link">Export Compliance</a>
-          <a href="/countries/usa/" class="footer-nav__link">USA Importing Guide</a>
+          <a href="/import-succulents-usa/" class="footer-nav__link">USA Importing Guide</a>
         </nav>
       </div>
       <div>
         <div class="footer-col__heading">Genera</div>
         <nav class="footer-nav">
-          <a href="/products/#aeonium" class="footer-nav__link">Aeonium</a>
-          <a href="/products/#echeveria" class="footer-nav__link">Echeveria</a>
-          <a href="/products/#sedum" class="footer-nav__link">Sedum</a>
-          <a href="/products/#rare" class="footer-nav__link">Rare &amp; Hybrid</a>
+          <a href="/aeonium/" class="footer-nav__link">Aeonium</a>
+          <a href="/echeveria/" class="footer-nav__link">Echeveria</a>
         </nav>
       </div>
       <div>
@@ -290,7 +291,7 @@
   </div>
 </footer>
 
-<script src="/public/assets/js/main.js?v=20260629a" defer></script>
+<script src="/public/assets/js/main.js?v=20260706a" defer></script>
 </body>
 </html>
 

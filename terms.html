@@ -14,7 +14,7 @@
   <link rel="manifest" href="/site.webmanifest" />
   <meta name="theme-color" content="#0F7654" />
   <meta name="format-detection" content="telephone=no" />
-  <link rel="stylesheet" href="/public/assets/css/styles.css?v=20260629a" />
+  <link rel="stylesheet" href="/public/assets/css/styles.css?v=20260706a" />
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
 <body>
@@ -26,12 +26,16 @@
       <span class="site-logo__tagline">Yunnan · Est. 2013</span>
     </a>
     <nav class="site-nav" aria-label="Primary navigation">
-      <a href="/" class="site-nav__link">Home</a>
-      <a href="/products/" class="site-nav__link">Products</a>
-      <a href="/export/" class="site-nav__link">Export</a>
-      <a href="/countries/" class="site-nav__link">Countries</a>
-      <a href="/farm/" class="site-nav__link">Farm</a>
-      <a href="/resources/" class="site-nav__link">Resources</a>
+      <div class="site-nav__dropdown">
+        <a href="/aeonium/" class="site-nav__link" aria-haspopup="true">Products</a>
+        <div class="site-nav__menu">
+          <a href="/aeonium/" class="site-nav__menu-link">Aeonium</a>
+          <a href="/echeveria/" class="site-nav__menu-link">Echeveria</a>
+        </div>
+      </div>
+      <a href="/export/" class="site-nav__link">Wholesale</a>
+      <a href="/import-succulents-usa/" class="site-nav__link">Import Guides</a>
+      <a href="/about/" class="site-nav__link">About</a>
       <a href="/contact/" class="site-nav__link">Contact</a>
     </nav>
     <div class="site-header__actions">
@@ -39,7 +43,7 @@
         <a class="lang-btn is-active" href="/" hreflang="en" aria-current="true">EN</a>
         <a class="lang-btn" href="/zh/" hreflang="zh">中文</a>
       </div>
-      <a href="/#rfq" class="btn btn--primary btn--sm">Request Quote</a>
+      <a href="/contact/" class="btn btn--primary btn--sm">Request Quote</a>
     </div>
     <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
       <span class="nav-toggle__bar"></span>
@@ -52,12 +56,11 @@
 <div class="mobile-nav" role="dialog" aria-label="Mobile menu">
   <div class="mobile-nav__backdrop"></div>
   <nav class="mobile-nav__panel">
-    <a href="/" class="mobile-nav__link">Home</a>
-    <a href="/products/" class="mobile-nav__link">Products</a>
-    <a href="/export/" class="mobile-nav__link">Export</a>
-    <a href="/countries/" class="mobile-nav__link">Countries</a>
-    <a href="/farm/" class="mobile-nav__link">Farm</a>
-    <a href="/resources/" class="mobile-nav__link">Resources</a>
+    <a href="/aeonium/" class="mobile-nav__link">Aeonium</a>
+    <a href="/echeveria/" class="mobile-nav__link">Echeveria</a>
+    <a href="/export/" class="mobile-nav__link">Wholesale</a>
+    <a href="/import-succulents-usa/" class="mobile-nav__link">Import Guides</a>
+    <a href="/about/" class="mobile-nav__link">About</a>
     <a href="/contact/" class="mobile-nav__link">Contact</a>
     </nav>
 </div>
@@ -119,7 +122,7 @@
   </div>
 </footer>
 
-<script src="/public/assets/js/main.js?v=20260629a" defer></script>
+<script src="/public/assets/js/main.js?v=20260706a" defer></script>
 </body>
 </html>
 

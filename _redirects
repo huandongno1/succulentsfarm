@@ -3,40 +3,56 @@
 # NOTE: Cloudflare Pages serves clean URLs natively (/foo → foo/index.html).
 #       301 = permanent redirect (preserves SEO).
 
-# ── V3-M4: Architecture flattening (June 2026) ─────────────────────────────
-# Resources sub-nesting collapsed; countries now top-level.
-/resources/countries/usa/   /countries/usa/                 301
-/resources/countries/usa    /countries/usa/                 301
-/resources/countries/       /countries/                     301
-/resources/countries        /countries/                     301
+# ── W1: V4 URL finalization (July 2026) ────────────────────────────────────
+# Flat keyword URLs for genus pages; countries/farm/resources renamed.
+/products/aeonium/     /aeonium/                               301
+/products/aeonium      /aeonium/                               301
+/products/echeveria/   /echeveria/                             301
+/products/echeveria    /echeveria/                             301
+/products/             /aeonium/                               301
+/products               /aeonium/                               301
+/countries/usa/        /import-succulents-usa/                 301
+/countries/usa         /import-succulents-usa/                 301
+/countries/japan/      /import-succulents-usa/                 301
+/countries/japan       /import-succulents-usa/                 301
+/countries/korea/      /import-succulents-usa/                 301
+/countries/korea       /import-succulents-usa/                 301
+/countries/            /import-succulents-usa/                 301
+/countries             /import-succulents-usa/                 301
+/farm/                 /about/                                 301
+/farm                  /about/                                 301
+/resources/            /blog/                                  301
+/resources             /blog/                                  301
+
+# ── V3-M4: Resources sub-nesting collapsed (superseded by W1, kept for old links) ──
+/resources/countries/usa/   /import-succulents-usa/            301
+/resources/countries/usa    /import-succulents-usa/            301
+/resources/countries/       /import-succulents-usa/            301
+/resources/countries        /import-succulents-usa/            301
 
 # ── M2: Architecture restructure (June 2026) ───────────────────────────────
-# Old URLs from the pre-restructure layout → new shipping URLs.
-/succulents/        /products/                              301
-/succulents         /products/                              301
-/about              /farm/                                  301
-/about.html         /farm/                                  301
-/about/             /farm/                                  301
-/export-compliance/ /export/                                301
-/export-compliance  /export/                                301
-/countries/usa.html /countries/usa/                         301
+/succulents/        /aeonium/                                  301
+/succulents         /aeonium/                                  301
+/about              /about/                                    301
+/about.html         /about/                                    301
+/export-compliance/ /export/                                   301
+/export-compliance  /export/                                   301
 
 # ── Marketing aliases / common alternate spellings ─────────────────────────
-/farm-story         /farm/                                  301
-/our-farm           /farm/                                  301
-/plants             /products/                              301
-/catalogue          /products/                              301
-/catalog            /products/                              301
-/compliance         /export/                                301
-/phytosanitary      /export/                                301
-/usa                /countries/usa/                         301
-/united-states      /countries/usa/                         301
-/japan              /countries/japan/                       301
-/korea              /countries/korea/                       301
-/blog               /resources/                             301
-/blog/              /resources/                             301
+/farm-story         /about/                                    301
+/our-farm           /about/                                    301
+/plants             /aeonium/                                  301
+/catalogue          /aeonium/                                  301
+/catalog             /aeonium/                                 301
+/compliance         /export/                                   301
+/phytosanitary      /export/                                   301
+/usa                /import-succulents-usa/                    301
+/united-states      /import-succulents-usa/                    301
+/japan              /import-succulents-usa/                    301
+/korea              /import-succulents-usa/                    301
+/wholesale          /export/                                   301
 
 # ── Contact / Quote aliases ────────────────────────────────────────────────
-/quote              /contact/                               301
-/rfq                /contact/                               301
-/enquiry            /contact/                               301
+/quote              /contact/                                  301
+/rfq                /contact/                                  301
+/enquiry            /contact/                                  301
