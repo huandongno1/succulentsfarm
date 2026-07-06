@@ -37,10 +37,12 @@
     return Object.assign({}, p, d);
   });
 
-  // Filter to the page's base genus
+  // Filter to the page's base genus ("rare" = curated crested/variegated/specimen pool)
   var BASE = (BASE_GENUS === 'all')
     ? PRODUCTS
-    : PRODUCTS.filter(function (p) { return p.g === BASE_GENUS; });
+    : (BASE_GENUS === 'rare')
+      ? PRODUCTS.filter(function (p) { return p.t === 'crested' || p.t === 'specimen' || p.color === 'variegated'; })
+      : PRODUCTS.filter(function (p) { return p.g === BASE_GENUS; });
 
   // ─── State ───
   var state = {
