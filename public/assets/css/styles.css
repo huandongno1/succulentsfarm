@@ -1083,6 +1083,16 @@ input, textarea, select { font-family: inherit; }
   gap: var(--s-6);
 }
 
+.species-grid--3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media (max-width: 1024px) {
+  .species-grid--3 { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 768px) {
+  .species-grid--3 { grid-template-columns: 1fr; }
+}
+
 .species-card {
   border-radius: var(--r-xl);
   overflow: hidden;
