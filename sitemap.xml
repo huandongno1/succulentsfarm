@@ -36,9 +36,19 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Export / Wholesale -->
+  <!-- Wholesale -->
   <url>
-    <loc>https://succulentsfarm.com/export/</loc>
+    <loc>https://succulentsfarm.com/wholesale-succulents/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://succulentsfarm.com/wholesale-aeonium/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://succulentsfarm.com/wholesale-echeveria/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

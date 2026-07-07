@@ -30,13 +30,22 @@
 /resources/countries/       /import-succulents-usa/            301
 /resources/countries        /import-succulents-usa/            301
 
+# ── W4: Wholesale conversion pages (July 2026) ─────────────────────────────
+# /export/ retired — content absorbed into /wholesale-succulents/
+/export/            /wholesale-succulents/                     301
+/export             /wholesale-succulents/                     301
+/export-compliance/ /wholesale-succulents/                     301
+/export-compliance  /wholesale-succulents/                     301
+/compliance         /wholesale-succulents/                     301
+/phytosanitary      /wholesale-succulents/                     301
+/wholesale          /wholesale-succulents/                     301
+/wholesale/         /wholesale-succulents/                     301
+
 # ── M2: Architecture restructure (June 2026) ───────────────────────────────
 /succulents/        /aeonium/                                  301
 /succulents         /aeonium/                                  301
 /about              /about/                                    301
 /about.html         /about/                                    301
-/export-compliance/ /export/                                   301
-/export-compliance  /export/                                   301
 
 # ── Marketing aliases / common alternate spellings ─────────────────────────
 /farm-story         /about/                                    301
@@ -44,13 +53,10 @@
 /plants             /aeonium/                                  301
 /catalogue          /aeonium/                                  301
 /catalog             /aeonium/                                 301
-/compliance         /export/                                   301
-/phytosanitary      /export/                                   301
 /usa                /import-succulents-usa/                    301
 /united-states      /import-succulents-usa/                    301
 /japan              /import-succulents-usa/                    301
 /korea              /import-succulents-usa/                    301
-/wholesale          /export/                                   301
 
 # ── Contact / Quote aliases ────────────────────────────────────────────────
 /quote              /contact/                                  301
