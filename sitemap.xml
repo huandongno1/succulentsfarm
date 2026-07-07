@@ -61,6 +61,41 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://succulentsfarm.com/echeveria/elegans/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://succulentsfarm.com/echeveria/agavoides/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://succulentsfarm.com/echeveria/perle-von-nurnberg/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://succulentsfarm.com/echeveria/lilacina/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://succulentsfarm.com/echeveria/lola/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://succulentsfarm.com/echeveria/afterglow/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://succulentsfarm.com/echeveria/black-prince/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://succulentsfarm.com/rare-succulents/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
