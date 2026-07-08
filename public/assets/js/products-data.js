@@ -24,7 +24,7 @@
     // ── AEONIUM — Crested / 缀化 ─────────────────────────────
     {e:"Flower Moon Night", n:"花月夜缀",           g:"aeonium",  t:"crested",  s:"~25 cm", sin:"9.8 in",   i:I+"aeonium-flower-moon-night-crested.jpg"},
     {e:"Rain-Flower Stone", n:"雨花石缀",           g:"aeonium",  t:"crested",  s:"25–30 cm", sin:"9.8-11.8 in", i:I+"aeonium-rain-flower-stone-crested.jpg"},
-    {e:"Black Beauty", n:"黑美人缀",           g:"aeonium",  t:"crested",  s:"20–25 cm", sin:"7.9-9.8 in"},
+    {e:"Black Beauty", n:"黑美人缀",           g:"aeonium",  t:"crested",  s:"20–25 cm", sin:"7.9-9.8 in", i:I+"aeonium-black-beauty-crested.jpg"},
     {e:"Poseidon", n:"海王缀",             g:"aeonium",  t:"crested",  s:"20–25 cm", sin:"7.9-9.8 in", i:I+"aeonium-neptune-crested.jpg"},
     {e:"Green Crest", n:"绿破缀",             g:"aeonium",  t:"crested",  s:"20–25 cm", sin:"7.9-9.8 in", i:I+"aeonium-green-break-crested.jpg"},
     {e:"Lychee", n:"荔枝缀 (S)",         g:"aeonium",  t:"crested",  s:"20–25 cm", sin:"7.9-9.8 in", i:I+"aeonium-lychee-crested-a.jpg"},
@@ -83,7 +83,7 @@
     {e:"Sea Fairy", n:"海仙穴盘苗",         g:"aeonium",  t:"plug",     s:"5–8 cm", sin:"2.0-3.1 in",   i:I+"aeonium-sea-fairy-plug.jpg"},
     {e:"Clara's Lover", n:"克拉恋人穴盘",       g:"aeonium",  t:"plug",     s:"4–6 cm", sin:"1.6-2.4 in",   i:I+"aeonium-clara-lover-plug.jpg"},
     {e:"Poseidon", n:"海王穴盘",           g:"aeonium",  t:"plug",     s:"5–8 cm", sin:"2.0-3.1 in",   i:I+"aeonium-neptune-plug.jpg"},
-    {e:"Peach Blossom Cove", n:"桃花坞穴盘",         g:"aeonium",  t:"plug",     s:"5–8 cm", sin:"2.0-3.1 in"},
+    {e:"Peach Blossom Cove", n:"桃花坞穴盘",         g:"aeonium",  t:"plug",     s:"5–8 cm", sin:"2.0-3.1 in", i:I+"aeonium-peach-blossom-cove-plug.jpg"},
     {e:"Black Magic", n:"黑魔锦穴盘",         g:"aeonium",  t:"plug",     s:"5–8 cm", sin:"2.0-3.1 in",   i:I+"aeonium-black-magic-variegated-plug.jpg"},
     {e:"Moon in Water", n:"水中月穴盘",         g:"aeonium",  t:"plug",     s:"5–8 cm", sin:"2.0-3.1 in",   i:I+"aeonium-water-moon-plug.jpg"},
     {e:"Pink Crown", n:"粉冠穴盘 (S)",       g:"aeonium",  t:"plug",     s:"4–6 cm", sin:"1.6-2.4 in",   i:I+"aeonium-pink-crown-plug-a.jpg"},
