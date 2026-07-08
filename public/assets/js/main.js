@@ -5,25 +5,6 @@
    WhatsApp: 8618685816496
    ============================================================ */
 
-/* ─── Sticky Header ────────────────────────────────────────── */
-(function () {
-  const header = document.querySelector('.site-header');
-  if (!header) return;
-  // Only toggle transparent on homepage (has .hero section)
-  const hasHero = !!document.querySelector('.hero');
-  if (!hasHero) {
-    header.classList.remove('is-transparent');
-    header.classList.add('is-solid');
-    return;
-  }
-  function updateHeader() {
-    header.classList.toggle('is-transparent', window.scrollY <= 60);
-    header.classList.toggle('is-solid', window.scrollY > 60);
-  }
-  updateHeader();
-  window.addEventListener('scroll', updateHeader, { passive: true });
-})();
-
 /* ─── Mobile Nav ───────────────────────────────────────────── */
 (function () {
   const toggle = document.querySelector('.nav-toggle');

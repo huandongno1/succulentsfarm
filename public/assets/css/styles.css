@@ -296,13 +296,6 @@ input, textarea, select { font-family: inherit; }
               backdrop-filter var(--tr-base);
 }
 
-.site-header.is-transparent {
-  background: linear-gradient(180deg, rgba(8, 20, 12, 0.55) 0%, rgba(8, 20, 12, 0.25) 100%);
-  backdrop-filter: blur(12px) saturate(120%);
-  -webkit-backdrop-filter: blur(12px) saturate(120%);
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.08);
-}
-
 .site-header.is-solid {
   background: rgba(253, 251, 247, 0.95);
   backdrop-filter: blur(16px);
@@ -350,8 +343,6 @@ input, textarea, select { font-family: inherit; }
   transition: color var(--tr-fast);
 }
 
-.site-header.is-transparent .site-logo__name { color: var(--c-white); }
-
 .site-logo__tagline {
   font-size: 0.6rem;
   font-weight: 500;
@@ -361,8 +352,6 @@ input, textarea, select { font-family: inherit; }
   margin-top: 2px;
   transition: color var(--tr-fast);
 }
-
-.site-header.is-transparent .site-logo__tagline { color: rgba(255,255,255,0.65); }
 
 .site-nav {
   display: flex;
@@ -379,16 +368,9 @@ input, textarea, select { font-family: inherit; }
   transition: color var(--tr-fast), background var(--tr-fast);
 }
 
-.site-header.is-transparent .site-nav__link { color: rgba(255,255,255,0.85); }
-
 .site-nav__link:hover {
   color: var(--c-primary);
   background: var(--c-primary-lt);
-}
-
-.site-header.is-transparent .site-nav__link:hover {
-  color: var(--c-white);
-  background: rgba(255,255,255,0.12);
 }
 
 /* ─── Active nav item indicator ─── */
@@ -396,11 +378,6 @@ input, textarea, select { font-family: inherit; }
   color: var(--c-primary);
   background: var(--c-primary-lt);
 }
-.site-header.is-transparent .site-nav__link[aria-current="page"] {
-  color: var(--c-white);
-  background: rgba(255,255,255,0.15);
-}
-
 /* ─── Products dropdown (nav) ─── */
 .site-nav__dropdown {
   position: relative;
@@ -456,10 +433,6 @@ input, textarea, select { font-family: inherit; }
   padding: 3px;
 }
 
-.site-header.is-transparent .lang-selector {
-  background: rgba(255,255,255,0.12);
-}
-
 .lang-btn {
   padding: 4px 8px;
   border-radius: var(--r-full);
@@ -472,17 +445,10 @@ input, textarea, select { font-family: inherit; }
   white-space: nowrap;
 }
 
-.site-header.is-transparent .lang-btn { color: rgba(255,255,255,0.65); }
-
 .lang-btn.is-active {
   background: var(--c-white);
   color: var(--c-primary);
   box-shadow: var(--sh-sm);
-}
-
-.site-header.is-transparent .lang-btn.is-active {
-  background: rgba(255,255,255,0.9);
-  color: var(--c-primary);
 }
 
 /* Mobile nav toggle */
@@ -500,8 +466,6 @@ input, textarea, select { font-family: inherit; }
   border-radius: var(--r-full);
   transition: all var(--tr-base);
 }
-.site-header.is-transparent .nav-toggle { color: var(--c-white); }
-
 /* Mobile drawer */
 .mobile-nav {
   position: fixed;
