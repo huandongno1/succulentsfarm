@@ -21,6 +21,11 @@
 
   <!-- Products (flat keyword URLs) -->
   <url>
+    <loc>https://succulentsfarm.com/succulents/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://succulentsfarm.com/aeonium/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://succulentsfarm.com/aeonium/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://succulentsfarm.com/zh/aeonium/" />
