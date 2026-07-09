@@ -134,6 +134,13 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- How to Order -->
+  <url>
+    <loc>https://succulentsfarm.com/how-to-order/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Wholesale -->
   <url>
     <loc>https://succulentsfarm.com/wholesale-succulents/</loc>
