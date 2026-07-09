@@ -474,6 +474,7 @@ input, textarea, select { font-family: inherit; }
   display: flex;
   visibility: hidden;
   pointer-events: none;
+  overflow: hidden;
 }
 
 .mobile-nav.is-open {
