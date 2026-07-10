@@ -64,6 +64,3 @@
     window.open(`https://wa.me/8618685816496?text=${text}`, '_blank');
   });
 })();
-
-/* ─── Lucide Icons ─────────────────────────────────────────── */
-if (typeof lucide !== 'undefined') lucide.createIcons();

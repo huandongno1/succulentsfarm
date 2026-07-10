@@ -1,12 +1,11 @@
 /* ============================================================
    SOUTHQUEST FARM — GLOBAL DESIGN SYSTEM
    succulentsfarm.com  |  Yunnan, China → World
-   Premium Succulent B2B Export  |  Est. 2013
+   Succulent B2B Export  |  Est. 2014
    ============================================================ */
 
-/* ─── 1. FONTS — Inter (Latin/Vietnamese) + Cairo (Arabic) ── */
-@import url('https://fonts.loli.net/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;1,14..32,400&display=swap');
-@import url('https://fonts.loli.net/css2?family=Cairo:wght@400;500;600;700&display=swap');
+/* ─── 1. FONTS — Inter, loaded via <link> in each page <head> ─
+   (not @import: avoids the extra render-blocking round trip) ── */
 
 /* ─── 2. DESIGN TOKENS ────────────────────────────────────── */
 :root {
@@ -2369,28 +2368,3 @@ input, textarea, select { font-family: inherit; }
 .sq-modal__specs dt { color: var(--c-text-3); font-weight: 500; }
 .sq-modal__specs dd { color: var(--c-text); font-weight: 600; }
 .sq-modal__cta { margin-top: auto; }
-
-/* ─── ARABIC / RTL SUPPORT ─────────────────────────────────── */
-html[lang="ar"] body,
-[dir="rtl"] {
-  font-family: 'Cairo', 'Noto Sans Arabic', var(--font-sans);
-}
-/* Cairo renders a touch smaller; nudge line-height for readability */
-html[lang="ar"] body { line-height: 1.8; }
-
-/* Mirror the asymmetric, explicitly-left/right components */
-[dir="rtl"] .farm-story__pull-quote {
-  border-left: none;
-  border-right: 3px solid var(--c-primary);
-  padding-left: 0;
-  padding-right: var(--s-6);
-}
-[dir="rtl"] .accordion-trigger,
-[dir="rtl"] .faq-question { text-align: right; }
-[dir="rtl"] .product-card__type-pill { left: auto; right: 8px; }
-[dir="rtl"] .page-hero__breadcrumb { flex-direction: row-reverse; justify-content: flex-end; }
-[dir="rtl"] .catalog-count { margin-left: 0; margin-right: auto; }
-[dir="rtl"] .hero__video-label { left: auto; right: var(--s-6); }
-/* Flip directional arrow glyphs so they point the reading direction */
-[dir="rtl"] .icon-arrow,
-[dir="rtl"] .scenario-card__link-arrow { transform: scaleX(-1); }
