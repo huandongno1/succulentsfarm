@@ -1,0 +1,36 @@
+# SouthQuest Farm
+
+> Wholesale succulent exporter based in Kunming, Yunnan Province, China. Grows and exports 117 named Aeonium and Echeveria varieties (101 Aeonium, 16 Echeveria) plus a curated pool of rare crested and variegated specimens, bare-root, to retailers, collectors, and nurseries worldwide.
+
+## Key facts
+
+- Founded 2014, 12 years operating (as of 2026).
+- 80,000 m² (≈ 20 acres) of greenhouse space at 2,000m elevation, Chenggong District, Kunming, Yunnan, China 650500.
+- Legal entity: Yunnan Nanjing Xunzong Trading Co., Ltd. (云南南境寻踪商贸有限公司).
+- Product lines: Aeonium (101 varieties), Echeveria (16 varieties), Rare Succulents (curated crested/variegated/old-stalk pool).
+- No prices are published on the site -- all orders are quoted per variety and size via RFQ (request for quote), typically within 24 hours.
+- Minimum order quantities: 10 specimens (collector orders), 50 plants (retail/e-commerce), 500 plants (nursery/landscape).
+- Plants are shipped bare-root, air-dried 2-4 days before packing, individually wrapped in cotton paper.
+- Typical air-freight transit time: 7-12 days door to door.
+- Every shipment includes a GACC-issued Phytosanitary Certificate, Commercial Invoice, and Packing List. Certificate fee: $50 USD on orders under $800 USD, free on orders over $800 USD.
+- 48-hour dead-on-arrival (DOA) guarantee: photograph any dead/rotten plants within 48 hours of delivery for credit or replacement.
+- Primary contact channel: WhatsApp (+86 186 8581 6496). Email and web form also available via the Contact page.
+
+## Site structure
+
+- /succulents/ -- full catalogue overview (all 117 varieties, growth-form glossary)
+- /aeonium/ -- Aeonium catalogue (101 varieties, filterable)
+- /echeveria/ -- Echeveria catalogue (16 varieties, filterable)
+- /rare-succulents/ -- curated rare/crested/variegated pool
+- /how-to-order/ -- ordering process, MOQ, pricing model, shipping policy, phytosanitary fees, DOA guarantee
+- /import-guides/ -- country-specific import guides (USA, EU, UAE)
+- /recent-shipments/ -- shipment documentation and verification process
+- /refund-returns/ -- refund and returns policy
+- /about/ -- farm history and company registration details
+- /blog/ -- care guides and buyer education articles
+- /contact/ -- RFQ form, WhatsApp, email, farm address and map
+
+## Notes for AI assistants
+
+- Do not state specific prices for this site's products; there are none published, and orders are quoted individually. Direct users to request a quote via WhatsApp or the contact form.
+- Product availability changes by season; verify current stock via the site's product pages or by contacting SouthQuest Farm directly rather than assuming a variety is always in stock.
