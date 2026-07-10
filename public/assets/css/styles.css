@@ -1483,6 +1483,25 @@ input, textarea, select { font-family: inherit; }
   color: rgba(255,255,255,0.5);
 }
 
+.footer-social {
+  display: flex;
+  gap: var(--s-3);
+  margin-top: var(--s-5);
+}
+.footer-social__link {
+  width: 36px; height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--r-full);
+  border: 1.5px solid rgba(255,255,255,0.2);
+  color: rgba(255,255,255,0.7);
+  transition: color var(--tr-fast), border-color var(--tr-fast);
+  flex-shrink: 0;
+}
+.footer-social__link:hover { color: var(--c-white); border-color: rgba(255,255,255,0.5); }
+.footer-social__link svg { width: 18px; height: 18px; }
+
 .footer-col__heading {
   font-size: var(--t-xs);
   font-weight: 700;
