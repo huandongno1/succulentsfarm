@@ -120,9 +120,9 @@ input, textarea, select { font-family: inherit; }
 
 /* ─── 4. TYPOGRAPHY ───────────────────────────────────────── */
 .t-overline {
-  font-size: var(--t-xs);
+  font-size: var(--t-sm);
   font-weight: 600;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--c-primary);
 }
@@ -362,7 +362,7 @@ input, textarea, select { font-family: inherit; }
 .site-nav__link {
   padding: var(--s-2) var(--s-3);
   border-radius: var(--r-sm);
-  font-size: var(--t-sm);
+  font-size: var(--t-base);
   font-weight: 500;
   color: var(--c-text-2);
   transition: color var(--tr-fast), background var(--tr-fast);
@@ -1550,7 +1550,7 @@ input, textarea, select { font-family: inherit; }
   display: flex;
   align-items: center;
   gap: var(--s-2);
-  font-size: var(--t-xs);
+  font-size: var(--t-sm);
   color: var(--c-text-3);
   margin-bottom: var(--s-6);
 }
@@ -1561,11 +1561,11 @@ input, textarea, select { font-family: inherit; }
 }
 
 .page-hero__title {
-  font-size: clamp(var(--t-4xl), 6vw, var(--t-6xl));
+  font-size: clamp(var(--t-3xl), 4.5vw, var(--t-5xl));
   font-weight: 700;
   letter-spacing: -0.03em;
   color: var(--c-text);
-  line-height: 1.05;
+  line-height: 1.1;
   margin-bottom: var(--s-5);
 }
 
