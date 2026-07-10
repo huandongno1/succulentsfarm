@@ -10,10 +10,17 @@ Per EXECUTION 铁律一: any number/factual claim not in `data/site-facts.json` 
 - [ ] **Real photography** — no farm/greenhouse/packing/team photos in `public/assets/img/` beyond product shots, logo, and og-cover. All Unsplash stock images removed and replaced with plain-layout cards (no image) rather than left as fake photos. Swap in real photos as they become available:
   - Homepage hero background
   - 3 buyer-type cards (retail / collector / nursery)
-  - Homepage + About greenhouse/aerial shot
   - How-it-works 4-step process photos (wash → dry → wrap → pack)
   - Recent-shipments style packing photos
   - Founder + team photo
+
+- [ ] **Real video** — user confirmed 2026-07-10 they will upload farm-tour and packing/dispatch footage. Placeholder `.video-card` components are live on `/` (2 slots: farm tour + packing) and `/about/` (1 farm-tour slot replacing the old greenhouse stat placeholder + 1 packing slot near the bottom). To wire up real footage once files exist, drop the `.mp4` into `public/assets/video/` (cache headers already configured in `_headers`) and replace each `.video-card__placeholder` div with:
+  ```html
+  <video class="video-card__media" controls preload="metadata" poster="/public/assets/img/<poster>.jpg">
+    <source src="/public/assets/video/<filename>.mp4" type="video/mp4">
+  </video>
+  ```
+  Suggested filenames: `farm-tour.mp4`, `packing-dispatch.mp4`.
 
 ## Resolved (moved from AI-generated to confirmed, see site-facts.json)
 

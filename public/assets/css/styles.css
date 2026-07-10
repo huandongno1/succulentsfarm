@@ -2067,6 +2067,57 @@ input, textarea, select { font-family: inherit; }
 }
 .js-add-inquiry.is-added { background: var(--c-primary-lt); border-color: var(--c-primary); color: var(--c-primary-dk); }
 
+/* ─── Video Cards (placeholder until real footage is uploaded) ─ */
+.video-card {
+  position: relative;
+  border-radius: var(--r-xl);
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  background: var(--c-bg-2);
+  border: 1.5px solid var(--c-border);
+}
+.video-card__placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s-3);
+  text-align: center;
+  padding: var(--s-6);
+}
+.video-card__play {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--c-white);
+  box-shadow: var(--sh-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--c-primary);
+}
+.video-card__play svg { width: 22px; height: 22px; margin-left: 3px; }
+.video-card__label {
+  font-size: var(--t-base);
+  font-weight: 700;
+  color: var(--c-text);
+}
+.video-card__sub {
+  font-size: var(--t-xs);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--c-text-3);
+}
+.video-card__media {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .product-card__genus {
   font-size: 10px;
   font-weight: 600;

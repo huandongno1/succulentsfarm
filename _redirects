@@ -30,20 +30,20 @@
 /resources/countries/       /import-succulents-usa/            301
 /resources/countries        /import-succulents-usa/            301
 
-# ── W4: Wholesale conversion pages (July 2026) ─────────────────────────────
-# /export/ retired — content absorbed into /wholesale-succulents/
-/export/            /wholesale-succulents/                     301
-/export             /wholesale-succulents/                     301
-/export-compliance/ /wholesale-succulents/                     301
-/export-compliance  /wholesale-succulents/                     301
-/compliance         /wholesale-succulents/                     301
-/phytosanitary      /wholesale-succulents/                     301
-/wholesale          /wholesale-succulents/                     301
-/wholesale/         /wholesale-succulents/                     301
+# ── W4/B10: Wholesale conversion pages (July 2026) ──────────────────────────
+# /export/ and /wholesale-succulents/ both retired — content absorbed into /how-to-order/
+/export/            /how-to-order/                              301
+/export             /how-to-order/                              301
+/export-compliance/ /how-to-order/                              301
+/export-compliance  /how-to-order/                              301
+/compliance         /how-to-order/                               301
+/phytosanitary      /how-to-order/                               301
+/wholesale          /how-to-order/                               301
+/wholesale/         /how-to-order/                               301
+/wholesale-succulents/  /how-to-order/                           301
+/wholesale-succulents   /how-to-order/                           301
 
 # ── M2: Architecture restructure (June 2026) ───────────────────────────────
-/succulents/        /aeonium/                                  301
-/succulents         /aeonium/                                  301
 /about              /about/                                    301
 /about.html         /about/                                    301
 
