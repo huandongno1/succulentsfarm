@@ -176,9 +176,19 @@
 
   <!-- Import Guides -->
   <url>
+    <loc>https://succulentsfarm.com/import-guides/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://succulentsfarm.com/import-succulents-usa/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://succulentsfarm.com/import-succulents-eu/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://succulentsfarm.com/import-succulents-uae/</loc>
