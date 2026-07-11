@@ -33,3 +33,6 @@ Per EXECUTION 铁律一: any number/factual claim not in `data/site-facts.json` 
 - [x] Drying/hardening days: unified to **2–4 days** (was inconsistently 3–7 / 5–7 across pages)
 - [x] Transit time: unified to **7–12 days** overall (was fabricated per-region breakdown)
 - [x] Phyto certificate fee: **$50 USD under $800, free over $800** — confirmed real
+- [x] UAE transit time: unconfirmed per-emirate split ("Dubai/Abu Dhabi 4-6 business days", "Sharjah/other 5-7 business days") → **confirmed 2026-07-11: air-freight leg is ~2 days, same for all emirates** (excludes the 2-4 day pre-shipment drying already tracked above). Fixed in `import-succulents-uae/index.html` (prose, transit-time list, visible FAQ answer, FAQPage JSON-LD).
+- [x] Contact email: `donghuanno1@gmail.com` (personal Gmail placeholder) → **`info@succulentsfarm.com`** (confirmed live 2026-07-11 via Cloudflare Email Routing), replaced sitewide.
+- [x] Social media links: footer icons + `sameAs` schema were empty/placeholder → **confirmed 2026-07-11**, real TikTok/Instagram/Facebook/YouTube URLs wired in.
