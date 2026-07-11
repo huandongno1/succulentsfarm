@@ -51,13 +51,18 @@
   els.forEach(el => observer.observe(el));
 })();
 
-/* ─── RFQ Form → WhatsApp ──────────────────────────────────── */
+/* ─── RFQ Form → WhatsApp + email fallback ─────────────────── */
 (function () {
   const form = document.getElementById('rfq-form');
   if (!form) return;
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     const data = new FormData(form);
+
+    data.append('access_key', '218780bd-22f3-45a0-8e7e-7d5954e59617');
+    data.append('subject', 'New RFQ from succulentsfarm.com');
+    fetch('https://api.web3forms.com/submit', { method: 'POST', body: data }).catch(function () {});
+
     const text = encodeURIComponent(
       `Hi SouthQuest Farm,\n\nName: ${data.get('name')||''}\nCountry: ${data.get('country')||''}\nBuyer Type: ${data.get('buyer_type')||''}\n\n${data.get('message')||''}`
     );
